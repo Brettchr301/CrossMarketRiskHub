@@ -1,0 +1,841 @@
+{
+  "generated_at": "2026-03-08T05:46:12.093461+00:00",
+  "n_prediction_contract_themes": 10,
+  "contract_meta": {
+    "hormuz_closure": {
+      "question": "Will Iran close the Strait of Hormuz in 2023?",
+      "volume": 1629.3297790000001,
+      "history_days": 74,
+      "token_id": "22598582483535773740414756334743152283924537831124839904952467579423672582796"
+    },
+    "red_sea_suez": {
+      "question": "Will the Suez Canal close in 2023?",
+      "volume": 15998.325700000001,
+      "history_days": 28,
+      "token_id": "39987535394721842826148781352908615224127486168847151589427048560355229538128"
+    },
+    "iran_military": {
+      "question": "Iran military response before October?",
+      "volume": 467982.229813,
+      "history_days": 42,
+      "token_id": "80098649860434452458869010399425102159716497307760148730246937950388762597929"
+    },
+    "us_action_iran": {
+      "question": "U.S. military action against Iran before November?",
+      "volume": 1070645.35004,
+      "history_days": 39,
+      "token_id": "97555522401010074703915572947481220777069396064646214368523338283627926241997"
+    },
+    "oil_above_100": {
+      "question": "Will crude oil hit $100 in 2023?",
+      "volume": 28439.409087,
+      "history_days": 78,
+      "token_id": "42371051406977616887323771237470724119133863883772538197834125251563595750179"
+    },
+    "oil_above_120": {
+      "question": "Will crude oil hit $120 in 2023?",
+      "volume": 11435.279009,
+      "history_days": 72,
+      "token_id": "84582565297444596484943559837077238970881392602702085880548432290541632510235"
+    },
+    "us_recession": {
+      "question": "U.S. Recession in 2024?",
+      "volume": 875848.13851399,
+      "history_days": 149,
+      "token_id": "7199924557536673982836049841538041571403060582795466550710959952259572350257"
+    },
+    "fed_cut": {
+      "question": "Fed rate cut by September 18?",
+      "volume": 20345317.826273,
+      "history_days": 194,
+      "token_id": "50376722767982976792819483321675476184683505970028931051190616149906273365875"
+    },
+    "russia_ukraine_ceasefire": {
+      "question": "Russia x Ukraine Ceasefire in 2024?",
+      "volume": 3514408.215491,
+      "history_days": 107,
+      "token_id": "91826859122482583539690475548322460329734606237002036516621809700136182526210"
+    },
+    "lng_natgas": {
+      "question": "Will LNG Esports win LoL Worlds 2024?",
+      "volume": 145555.667417,
+      "history_days": 22,
+      "token_id": "59010410012334635936636270783132332287348262077567332088902837697097708021195"
+    }
+  },
+  "comparison": {
+    "tenk_risk_mapped": {
+      "mean_hit_rate": 0.602,
+      "mean_mae": 0.071337995376741,
+      "n_tickers": 12
+    },
+    "baseline_4theme": {
+      "mean_hit_rate": 0.5506666666666666,
+      "mean_mae": 0.08771604522501907,
+      "n_tickers": 12,
+      "themes": [
+        "hormuz_closure",
+        "red_sea_suez",
+        "oil_above_100"
+      ]
+    }
+  },
+  "top_edge_tickers": [
+    {
+      "ticker": "SBLK",
+      "edge_pct": -0.04663665056222579,
+      "hit_rate": 0.696
+    },
+    {
+      "ticker": "MUR",
+      "edge_pct": -0.03419125318658801,
+      "hit_rate": 0.544
+    },
+    {
+      "ticker": "AR",
+      "edge_pct": 0.029736976918206252,
+      "hit_rate": 0.64
+    },
+    {
+      "ticker": "DHT",
+      "edge_pct": 0.025999789676552976,
+      "hit_rate": 0.72
+    },
+    {
+      "ticker": "INSW",
+      "edge_pct": -0.015319762044568903,
+      "hit_rate": 0.64
+    },
+    {
+      "ticker": "NAT",
+      "edge_pct": -0.01357521033612234,
+      "hit_rate": 0.656
+    },
+    {
+      "ticker": "SM",
+      "edge_pct": -0.012558814461372787,
+      "hit_rate": 0.44
+    },
+    {
+      "ticker": "TNK",
+      "edge_pct": 0.010920266833325762,
+      "hit_rate": 0.76
+    }
+  ],
+  "tickers": [
+    {
+      "ticker": "TNK",
+      "tenk_url": "https://www.sec.gov/Archives/edgar/data/1419945/000141994525000004/tnk-20241231.htm",
+      "top_themes": [
+        "red_sea_suez",
+        "hormuz_closure",
+        "russia_ukraine_ceasefire",
+        "oil_above_100",
+        "lng_natgas"
+      ],
+      "theme_scores": {
+        "hormuz_closure": 0,
+        "red_sea_suez": 0,
+        "iran_military": 0,
+        "us_action_iran": 0,
+        "iran_nuclear_deal": 0,
+        "oil_above_100": 0,
+        "oil_above_120": 0,
+        "us_recession": 0,
+        "fed_cut": 0,
+        "russia_ukraine_ceasefire": 0,
+        "lng_natgas": 0
+      },
+      "mapped_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.76,
+        "mae": 0.06485306525999852,
+        "corr": 0.6402186295657469,
+        "predicted_20d_return": 0.010920266833325625,
+        "spot": 71.80999755859375,
+        "fair_price": 72.59418189323407,
+        "edge_pct": 0.010920266833325762,
+        "attribution": {
+          "red_sea_suez": 0.0,
+          "hormuz_closure": 0.0,
+          "russia_ukraine_ceasefire": -0.0031789510800602576,
+          "oil_above_100": 0.0,
+          "lng_natgas": -0.0006603651987094729
+        },
+        "last_feature_date": "2025-01-01"
+      },
+      "baseline_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.6,
+        "mae": 0.10680579941213658,
+        "corr": -0.1225851406928468,
+        "predicted_20d_return": -0.029459012620048356,
+        "spot": 71.80999755859375,
+        "fair_price": 69.6945459342695,
+        "edge_pct": -0.029459012620048304,
+        "attribution": {
+          "hormuz_closure": 0.0,
+          "red_sea_suez": 0.0,
+          "oil_above_100": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      }
+    },
+    {
+      "ticker": "INSW",
+      "tenk_url": "https://www.sec.gov/Archives/edgar/data/1679049/000110465926020113/insw-20251231x10k.htm",
+      "top_themes": [
+        "us_action_iran",
+        "russia_ukraine_ceasefire",
+        "us_recession",
+        "oil_above_100"
+      ],
+      "theme_scores": {
+        "hormuz_closure": 3,
+        "red_sea_suez": 6,
+        "iran_military": 12,
+        "us_action_iran": 84,
+        "iran_nuclear_deal": 32,
+        "oil_above_100": 17,
+        "oil_above_120": 17,
+        "us_recession": 34,
+        "fed_cut": 12,
+        "russia_ukraine_ceasefire": 60,
+        "lng_natgas": 6
+      },
+      "mapped_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.64,
+        "mae": 0.060162933852037734,
+        "corr": 0.5605513544517934,
+        "predicted_20d_return": -0.015319762044568924,
+        "spot": 72.41000366210938,
+        "fair_price": 71.3006996363595,
+        "edge_pct": -0.015319762044568903,
+        "attribution": {
+          "us_action_iran": -0.0058630279567392,
+          "russia_ukraine_ceasefire": -0.006507303402948062,
+          "us_recession": 0.0016239540897824572,
+          "oil_above_100": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      },
+      "baseline_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.64,
+        "mae": 0.09055733660282551,
+        "corr": -0.08424410177153446,
+        "predicted_20d_return": -0.036318236032045835,
+        "spot": 72.41000366210938,
+        "fair_price": 69.78020005802757,
+        "edge_pct": -0.03631823603204596,
+        "attribution": {
+          "hormuz_closure": 0.0,
+          "red_sea_suez": 0.0,
+          "oil_above_100": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      }
+    },
+    {
+      "ticker": "STNG",
+      "tenk_url": "https://www.sec.gov/Archives/edgar/data/1483934/000148393425000021/stng-20241231.htm",
+      "top_themes": [
+        "red_sea_suez",
+        "hormuz_closure",
+        "russia_ukraine_ceasefire",
+        "oil_above_100",
+        "lng_natgas"
+      ],
+      "theme_scores": {
+        "hormuz_closure": 0,
+        "red_sea_suez": 0,
+        "iran_military": 0,
+        "us_action_iran": 0,
+        "iran_nuclear_deal": 0,
+        "oil_above_100": 0,
+        "oil_above_120": 0,
+        "us_recession": 0,
+        "fed_cut": 0,
+        "russia_ukraine_ceasefire": 0,
+        "lng_natgas": 0
+      },
+      "mapped_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.6,
+        "mae": 0.050515088729915045,
+        "corr": 0.6794255910554495,
+        "predicted_20d_return": -0.006248608010303166,
+        "spot": 76.8499984741211,
+        "fair_price": 76.36979295806391,
+        "edge_pct": -0.00624860801030321,
+        "attribution": {
+          "red_sea_suez": 0.0,
+          "hormuz_closure": 0.0,
+          "russia_ukraine_ceasefire": -0.012827735217096192,
+          "oil_above_100": 0.0,
+          "lng_natgas": -0.000489761775798239
+        },
+        "last_feature_date": "2025-01-01"
+      },
+      "baseline_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.52,
+        "mae": 0.08447666385520482,
+        "corr": 0.015042271027700817,
+        "predicted_20d_return": -0.03452834514338196,
+        "spot": 76.8499984741211,
+        "fair_price": 74.19649520253826,
+        "edge_pct": -0.034528345143382023,
+        "attribution": {
+          "hormuz_closure": 0.0,
+          "red_sea_suez": 0.0,
+          "oil_above_100": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      }
+    },
+    {
+      "ticker": "SBLK",
+      "tenk_url": "https://www.sec.gov/Archives/edgar/data/1386716/000095015725000241/sblk-20241231.htm",
+      "top_themes": [
+        "red_sea_suez",
+        "hormuz_closure",
+        "russia_ukraine_ceasefire",
+        "oil_above_100",
+        "lng_natgas"
+      ],
+      "theme_scores": {
+        "hormuz_closure": 0,
+        "red_sea_suez": 0,
+        "iran_military": 0,
+        "us_action_iran": 0,
+        "iran_nuclear_deal": 0,
+        "oil_above_100": 0,
+        "oil_above_120": 0,
+        "us_recession": 0,
+        "fed_cut": 0,
+        "russia_ukraine_ceasefire": 0,
+        "lng_natgas": 0
+      },
+      "mapped_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.696,
+        "mae": 0.0699834258430352,
+        "corr": 0.3997076613965926,
+        "predicted_20d_return": -0.046636650562225775,
+        "spot": 23.65999984741211,
+        "fair_price": 22.556576702226035,
+        "edge_pct": -0.04663665056222579,
+        "attribution": {
+          "red_sea_suez": 0.0,
+          "hormuz_closure": 0.0,
+          "russia_ukraine_ceasefire": -0.029510259500443545,
+          "oil_above_100": 0.0,
+          "lng_natgas": -0.00010420119804696602
+        },
+        "last_feature_date": "2025-01-01"
+      },
+      "baseline_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.696,
+        "mae": 0.08309818947033784,
+        "corr": 0.04932302551836488,
+        "predicted_20d_return": -0.04896878718408552,
+        "spot": 23.65999984741211,
+        "fair_price": 22.50139835010869,
+        "edge_pct": -0.0489687871840855,
+        "attribution": {
+          "hormuz_closure": 0.0,
+          "red_sea_suez": 0.0,
+          "oil_above_100": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      }
+    },
+    {
+      "ticker": "DHT",
+      "tenk_url": "https://www.sec.gov/Archives/edgar/data/1331284/000114036125009685/ef20038952_20f.htm",
+      "top_themes": [
+        "red_sea_suez",
+        "hormuz_closure",
+        "russia_ukraine_ceasefire",
+        "oil_above_100",
+        "lng_natgas"
+      ],
+      "theme_scores": {
+        "hormuz_closure": 0,
+        "red_sea_suez": 0,
+        "iran_military": 0,
+        "us_action_iran": 0,
+        "iran_nuclear_deal": 0,
+        "oil_above_100": 0,
+        "oil_above_120": 0,
+        "us_recession": 0,
+        "fed_cut": 0,
+        "russia_ukraine_ceasefire": 0,
+        "lng_natgas": 0
+      },
+      "mapped_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.72,
+        "mae": 0.06371472290270272,
+        "corr": 0.5787236591494964,
+        "predicted_20d_return": 0.025999789676552882,
+        "spot": 18.06999969482422,
+        "fair_price": 18.539815886345025,
+        "edge_pct": 0.025999789676552976,
+        "attribution": {
+          "red_sea_suez": 0.0,
+          "hormuz_closure": 0.0,
+          "russia_ukraine_ceasefire": 0.011891778097286683,
+          "oil_above_100": 0.0,
+          "lng_natgas": -0.0004751031711477649
+        },
+        "last_feature_date": "2025-01-01"
+      },
+      "baseline_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.6,
+        "mae": 0.07674018694788486,
+        "corr": -0.04467519878955554,
+        "predicted_20d_return": -0.0050826649873270515,
+        "spot": 18.06999969482422,
+        "fair_price": 17.978155940054325,
+        "edge_pct": -0.005082664987327053,
+        "attribution": {
+          "hormuz_closure": 0.0,
+          "red_sea_suez": 0.0,
+          "oil_above_100": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      }
+    },
+    {
+      "ticker": "FRO",
+      "tenk_url": "https://www.sec.gov/Archives/edgar/data/913290/000091329025000003/fro-20241231.htm",
+      "top_themes": [
+        "red_sea_suez",
+        "hormuz_closure",
+        "russia_ukraine_ceasefire",
+        "oil_above_100",
+        "lng_natgas"
+      ],
+      "theme_scores": {
+        "hormuz_closure": 0,
+        "red_sea_suez": 0,
+        "iran_military": 0,
+        "us_action_iran": 0,
+        "iran_nuclear_deal": 0,
+        "oil_above_100": 0,
+        "oil_above_120": 0,
+        "us_recession": 0,
+        "fed_cut": 0,
+        "russia_ukraine_ceasefire": 0,
+        "lng_natgas": 0
+      },
+      "mapped_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.592,
+        "mae": 0.08916669742576364,
+        "corr": 0.5885711308063953,
+        "predicted_20d_return": 0.001785768051863156,
+        "spot": 34.560001373291016,
+        "fair_price": 34.621717519615785,
+        "edge_pct": 0.0017857680518631514,
+        "attribution": {
+          "red_sea_suez": 0.0,
+          "hormuz_closure": 0.0,
+          "russia_ukraine_ceasefire": -0.013780760828655984,
+          "oil_above_100": 0.0,
+          "lng_natgas": -0.0005684460480448283
+        },
+        "last_feature_date": "2025-01-01"
+      },
+      "baseline_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.496,
+        "mae": 0.11751027229754349,
+        "corr": -0.012465685149332459,
+        "predicted_20d_return": -0.031034196627074375,
+        "spot": 34.560001373291016,
+        "fair_price": 33.487459495240344,
+        "edge_pct": -0.03103419662707431,
+        "attribution": {
+          "hormuz_closure": 0.0,
+          "red_sea_suez": 0.0,
+          "oil_above_100": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      }
+    },
+    {
+      "ticker": "NAT",
+      "tenk_url": "https://www.sec.gov/Archives/edgar/data/1000177/000114036125016316/ef20039042_20f.htm",
+      "top_themes": [
+        "red_sea_suez",
+        "hormuz_closure",
+        "russia_ukraine_ceasefire",
+        "oil_above_100",
+        "lng_natgas"
+      ],
+      "theme_scores": {
+        "hormuz_closure": 0,
+        "red_sea_suez": 0,
+        "iran_military": 0,
+        "us_action_iran": 0,
+        "iran_nuclear_deal": 0,
+        "oil_above_100": 0,
+        "oil_above_120": 0,
+        "us_recession": 0,
+        "fed_cut": 0,
+        "russia_ukraine_ceasefire": 0,
+        "lng_natgas": 0
+      },
+      "mapped_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.656,
+        "mae": 0.04674969854755437,
+        "corr": 0.8122185508236975,
+        "predicted_20d_return": -0.013575210336122343,
+        "spot": 5.619999885559082,
+        "fair_price": 5.543707205023634,
+        "edge_pct": -0.01357521033612234,
+        "attribution": {
+          "red_sea_suez": 0.0,
+          "hormuz_closure": 0.0,
+          "russia_ukraine_ceasefire": -0.01098692951538991,
+          "oil_above_100": 0.0,
+          "lng_natgas": -0.0004018528690857865
+        },
+        "last_feature_date": "2025-01-01"
+      },
+      "baseline_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.656,
+        "mae": 0.07401316215992458,
+        "corr": -0.0013660306840854212,
+        "predicted_20d_return": -0.036401336893005475,
+        "spot": 5.619999885559082,
+        "fair_price": 5.415424376386193,
+        "edge_pct": -0.03640133689300557,
+        "attribution": {
+          "hormuz_closure": 0.0,
+          "red_sea_suez": 0.0,
+          "oil_above_100": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      }
+    },
+    {
+      "ticker": "SM",
+      "tenk_url": "https://www.sec.gov/Archives/edgar/data/893538/000089353826000032/sm-20251231.htm",
+      "top_themes": [
+        "fed_cut",
+        "russia_ukraine_ceasefire",
+        "lng_natgas",
+        "oil_above_100",
+        "oil_above_120"
+      ],
+      "theme_scores": {
+        "hormuz_closure": 0,
+        "red_sea_suez": 0,
+        "iran_military": 7,
+        "us_action_iran": 2,
+        "iran_nuclear_deal": 2,
+        "oil_above_100": 13,
+        "oil_above_120": 12,
+        "us_recession": 11,
+        "fed_cut": 35,
+        "russia_ukraine_ceasefire": 20,
+        "lng_natgas": 14
+      },
+      "mapped_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.44,
+        "mae": 0.08398462760262981,
+        "corr": -0.06012750597166213,
+        "predicted_20d_return": -0.012558814461372766,
+        "spot": 25.969999313354492,
+        "fair_price": 25.643846910416094,
+        "edge_pct": -0.012558814461372787,
+        "attribution": {
+          "fed_cut": 0.0,
+          "russia_ukraine_ceasefire": 0.00975767675411182,
+          "lng_natgas": -5.751331810157447e-05,
+          "oil_above_100": 0.0,
+          "oil_above_120": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      },
+      "baseline_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.36,
+        "mae": 0.08138953031772544,
+        "corr": -0.15147716076526904,
+        "predicted_20d_return": -0.016099497532250966,
+        "spot": 25.969999313354492,
+        "fair_price": 25.551895373496585,
+        "edge_pct": -0.01609949753225087,
+        "attribution": {
+          "hormuz_closure": 0.0,
+          "red_sea_suez": 0.0,
+          "oil_above_100": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      }
+    },
+    {
+      "ticker": "MTDR",
+      "tenk_url": "https://www.sec.gov/Archives/edgar/data/1520006/000152000626000002/mtdr-20251231.htm",
+      "top_themes": [
+        "lng_natgas",
+        "fed_cut",
+        "russia_ukraine_ceasefire",
+        "us_action_iran",
+        "oil_above_120"
+      ],
+      "theme_scores": {
+        "hormuz_closure": 0,
+        "red_sea_suez": 0,
+        "iran_military": 14,
+        "us_action_iran": 46,
+        "iran_nuclear_deal": 5,
+        "oil_above_100": 18,
+        "oil_above_120": 23,
+        "us_recession": 20,
+        "fed_cut": 82,
+        "russia_ukraine_ceasefire": 57,
+        "lng_natgas": 294
+      },
+      "mapped_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.496,
+        "mae": 0.08182791545505763,
+        "corr": 0.23736116606204705,
+        "predicted_20d_return": -0.0057601489651530014,
+        "spot": 56.31999969482422,
+        "fair_price": 55.99558810686466,
+        "edge_pct": -0.005760148965153013,
+        "attribution": {
+          "lng_natgas": -6.78291450177505e-05,
+          "fed_cut": 0.0,
+          "russia_ukraine_ceasefire": 0.01102625561946698,
+          "us_action_iran": 0.003253176354879267,
+          "oil_above_120": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      },
+      "baseline_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.424,
+        "mae": 0.08693667995688915,
+        "corr": -0.28504047991902187,
+        "predicted_20d_return": -0.0022174073090425617,
+        "spot": 56.31999969482422,
+        "fair_price": 56.195115315855645,
+        "edge_pct": -0.002217407309042483,
+        "attribution": {
+          "hormuz_closure": 0.0,
+          "red_sea_suez": 0.0,
+          "oil_above_100": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      }
+    },
+    {
+      "ticker": "RRC",
+      "tenk_url": "https://www.sec.gov/Archives/edgar/data/315852/000119312526067292/rrc-20251231.htm",
+      "top_themes": [
+        "lng_natgas",
+        "fed_cut",
+        "oil_above_100",
+        "oil_above_120",
+        "us_recession"
+      ],
+      "theme_scores": {
+        "hormuz_closure": 0,
+        "red_sea_suez": 0,
+        "iran_military": 3,
+        "us_action_iran": 5,
+        "iran_nuclear_deal": 2,
+        "oil_above_100": 25,
+        "oil_above_120": 19,
+        "us_recession": 17,
+        "fed_cut": 28,
+        "russia_ukraine_ceasefire": 10,
+        "lng_natgas": 97
+      },
+      "mapped_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.44,
+        "mae": 0.07826913413647461,
+        "corr": -0.04616681068695127,
+        "predicted_20d_return": -0.008705099625222937,
+        "spot": 41.4900016784668,
+        "fair_price": 41.128827080405074,
+        "edge_pct": -0.008705099625223,
+        "attribution": {
+          "lng_natgas": 0.00025056837489546776,
+          "fed_cut": 0.0,
+          "oil_above_100": 0.0,
+          "oil_above_120": 0.0,
+          "us_recession": 0.003913226274751877
+        },
+        "last_feature_date": "2025-01-01"
+      },
+      "baseline_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.456,
+        "mae": 0.0781361188524685,
+        "corr": -0.06808122741042454,
+        "predicted_20d_return": 0.010759154655976202,
+        "spot": 41.4900016784668,
+        "fair_price": 41.936399023202135,
+        "edge_pct": 0.010759154655976244,
+        "attribution": {
+          "hormuz_closure": 0.0,
+          "red_sea_suez": 0.0,
+          "oil_above_100": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      }
+    },
+    {
+      "ticker": "MUR",
+      "tenk_url": "https://www.sec.gov/Archives/edgar/data/717423/000162828026011709/mur-20251231.htm",
+      "top_themes": [
+        "us_recession",
+        "lng_natgas",
+        "oil_above_100",
+        "oil_above_120",
+        "fed_cut"
+      ],
+      "theme_scores": {
+        "hormuz_closure": 0,
+        "red_sea_suez": 0,
+        "iran_military": 0,
+        "us_action_iran": 0,
+        "iran_nuclear_deal": 0,
+        "oil_above_100": 2,
+        "oil_above_120": 2,
+        "us_recession": 6,
+        "fed_cut": 1,
+        "russia_ukraine_ceasefire": 1,
+        "lng_natgas": 3
+      },
+      "mapped_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.544,
+        "mae": 0.06434441647813878,
+        "corr": -0.1710150827812265,
+        "predicted_20d_return": -0.034191253186588,
+        "spot": 34.54999923706055,
+        "fair_price": 33.36869146554979,
+        "edge_pct": -0.03419125318658801,
+        "attribution": {
+          "us_recession": 0.0004043111011317089,
+          "lng_natgas": -3.899538636976575e-05,
+          "oil_above_100": 0.0,
+          "oil_above_120": 0.0,
+          "fed_cut": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      },
+      "baseline_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.584,
+        "mae": 0.06547910925211302,
+        "corr": -0.35389738147495214,
+        "predicted_20d_return": -0.039116410772096995,
+        "spot": 34.54999923706055,
+        "fair_price": 33.19852727472805,
+        "edge_pct": -0.039116410772096946,
+        "attribution": {
+          "hormuz_closure": 0.0,
+          "red_sea_suez": 0.0,
+          "oil_above_100": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      }
+    },
+    {
+      "ticker": "AR",
+      "tenk_url": "https://www.sec.gov/Archives/edgar/data/1433270/000110465926013386/ar-20251231x10k.htm",
+      "top_themes": [
+        "us_action_iran",
+        "russia_ukraine_ceasefire",
+        "fed_cut"
+      ],
+      "theme_scores": {
+        "hormuz_closure": 0,
+        "red_sea_suez": 0,
+        "iran_military": 0,
+        "us_action_iran": 2,
+        "iran_nuclear_deal": 0,
+        "oil_above_100": 0,
+        "oil_above_120": 0,
+        "us_recession": 0,
+        "fed_cut": 1,
+        "russia_ukraine_ceasefire": 2,
+        "lng_natgas": 0
+      },
+      "mapped_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.64,
+        "mae": 0.10248421828758392,
+        "corr": 0.10120310754946371,
+        "predicted_20d_return": 0.02973697691820624,
+        "spot": 38.83000183105469,
+        "fair_price": 39.98468869923867,
+        "edge_pct": 0.029736976918206252,
+        "attribution": {
+          "us_action_iran": 0.001395855081770534,
+          "russia_ukraine_ceasefire": 0.016584507559362006,
+          "fed_cut": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      },
+      "baseline_model": {
+        "valid": true,
+        "obs": 125,
+        "hit_rate": 0.576,
+        "mae": 0.10744949357517491,
+        "corr": -0.307011065893608,
+        "predicted_20d_return": 0.025460454431536498,
+        "spot": 38.83000183105469,
+        "fair_price": 39.818631323250735,
+        "edge_pct": 0.02546045443153651,
+        "attribution": {
+          "hormuz_closure": 0.0,
+          "red_sea_suez": 0.0,
+          "oil_above_100": 0.0
+        },
+        "last_feature_date": "2025-01-01"
+      }
+    }
+  ]
+}

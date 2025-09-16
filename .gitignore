@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+*.pyc
+
+# API artifacts
+quant-api/raw_archives/
+quant-api/*.db
+quant-api/*.sqlite
+quant-api/data/*.txt
+
+# JS
+quant-dashboard/node_modules/
+quant-dashboard/dist/
+node_modules/
+dist/
+build/
+
+# Env & secrets
+.env
+*.log
+bridge_config.json
+bridge_messages.json
+
+# Data
+*.db

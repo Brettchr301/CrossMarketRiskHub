@@ -1,0 +1,28 @@
+{
+  "name": "quant-dashboard",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite --port 5176 --host 127.0.0.1",
+    "dev:strict": "vite --port 5176 --host 127.0.0.1 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --port 5176 --host 127.0.0.1",
+    "app:dev": "concurrently -k \"npm:dev:strict\" \"wait-on http://127.0.0.1:5176 && cross-env QUANT_DASHBOARD_URL=http://127.0.0.1:5176 node ./scripts/launch-electron.cjs ./electron/main.cjs\"",
+    "app:start": "node ./scripts/launch-electron.cjs ./electron/main.cjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
+    "concurrently": "^9.2.1",
+    "cross-env": "^7.0.3",
+    "electron": "^36.2.1",
+    "vite": "^5.4.8",
+    "wait-on": "^8.0.3"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-03-08T06:46:20.089125+00:00",
+  "date_range": [
+    "2024-03-13",
+    "2026-02-05"
+  ],
+  "hold_days": 20,
+  "overlap_warning": null,
+  "overall": {
+    "trade_count": 1116,
+    "hit_rate": 0.40860215053763443,
+    "avg_net_return": -0.006261016891237173,
+    "median_net_return": -0.020363161761735964,
+    "p10_net_return": -0.1255423757069557,
+    "p90_net_return": 0.1335048607667252
+  },
+  "best_regimes": [
+    {
+      "regime": "High Red Sea",
+      "trades": 171,
+      "hit_rate": 0.6608187134502924,
+      "avg_net_return": 0.07522600351288704
+    },
+    {
+      "regime": "High Hormuz",
+      "trades": 945,
+      "hit_rate": 0.362962962962963,
+      "avg_net_return": -0.02100628725007869
+    }
+  ],
+  "best_tickers": [
+    {
+      "ticker": "NAT",
+      "trades": 34,
+      "hit_rate": 0.7647058823529411,
+      "avg_net_return": 0.08420788963293575
+    },
+    {
+      "ticker": "INSW",
+      "trades": 66,
+      "hit_rate": 0.5757575757575758,
+      "avg_net_return": 0.0452094745351128
+    },
+    {
+      "ticker": "FRO",
+      "trades": 117,
+      "hit_rate": 0.4017094017094017,
+      "avg_net_return": 0.00888432635515015
+    },
+    {
+      "ticker": "AR",
+      "trades": 161,
+      "hit_rate": 0.45962732919254656,
+      "avg_net_return": 0.0029257070470623983
+    },
+    {
+      "ticker": "MUR",
+      "trades": 86,
+      "hit_rate": 0.4883720930232558,
+      "avg_net_return": 0.0015835435029780912
+    },
+    {
+      "ticker": "RRC",
+      "trades": 105,
+      "hit_rate": 0.45714285714285713,
+      "avg_net_return": -0.0067559959624512835
+    },
+    {
+      "ticker": "DHT",
+      "trades": 56,
+      "hit_rate": 0.375,
+      "avg_net_return": -0.010250256316467416
+    },
+    {
+      "ticker": "STNG",
+      "trades": 97,
+      "hit_rate": 0.38144329896907214,
+      "avg_net_return": -0.012253139520620475
+    }
+  ],
+  "best_months": [
+    {
+      "month": 12,
+      "trades": 114,
+      "hit_rate": 0.7192982456140351,
+      "avg_net_return": 0.07431079317631395
+    },
+    {
+      "month": 1,
+      "trades": 116,
+      "hit_rate": 0.603448275862069,
+      "avg_net_return": 0.05957207001227925
+    },
+    {
+      "month": 8,
+      "trades": 28,
+      "hit_rate": 0.5714285714285714,
+      "avg_net_return": 0.024570921514923277
+    },
+    {
+      "month": 10,
+      "trades": 112,
+      "hit_rate": 0.6339285714285714,
+      "avg_net_return": 0.024023483164344942
+    },
+    {
+      "month": 2,
+      "trades": 66,
+      "hit_rate": 0.5151515151515151,
+      "avg_net_return": 0.0204363644578055
+    }
+  ]
+}

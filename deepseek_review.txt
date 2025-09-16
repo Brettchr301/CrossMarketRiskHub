@@ -1,0 +1,55 @@
+**1. Key feature additions:**
+```python
+# Term structure spreads
+features['brent_1m_3m_spread'] = brent_1m - brent_3m
+features['wti_brent_spread'] = wti_spot - brent_spot
+features['bdi_capesize_panamax_spread'] = bdi_c5 - bdi_pmax
+
+# Regime dummies (VIX > 30, USD strength)
+features['high_vol_regime'] = (vix > 30).astype(int)
+features['usd_up'] = (dxy_ret_20d > 0.02).astype(int)
+
+# Cross-terms
+features['brent_ship_interaction'] = brent_ret * ship_spot_ret
+features['event_freight_interaction'] = hormuz_d1 * ship_fwd_ret
+```
+
+**2. Regularization:**
+```python
+from sklearn.linear_model import RidgeCV
+model = RidgeCV(alphas=np.logspace(-3, 3, 50), cv=TimeSeriesSplit(5))
+# Start with alpha ~ 1.0, let CV determine. Lasso if feature selection needed.
+```
+
+**3. Prediction market events:**
+1. "US SPR release > 20M barrels next quarter" (Kalshi)
+2. "OPEC+ cut > 500k bpd at next meeting" (Polymarket)
+3. "China stimulus package > 1T yuan announced" (Kalshi)
+4. "Panama Canal daily transits < 30 for 30+ days" (Polymarket)
+5. "US refinery utilization < 85% next month" (Kalshi)
+
+**4. LLM JSON schema:**
+```json
+{
+  "quarter": "2024Q1",
+  "production": {
+    "oil_bpd": 500000,
+    "gas_mcfd": 1200000,
+    "guidance_change_pct": 2.5
+  },
+  "costs": {
+    "opex_per_boe": 12.50,
+    "capex_total_mm": 850,
+    "capex_upstream_pct": 75
+  },
+  "hedging": {
+    "oil_hedged_pct": 40,
+    "avg_hedge_price": 72.50,
+    "gas_hedged_pct": 30
+  },
+  "freight_exposure": {
+    "spot_coa_mix_pct": 60,
+    "avg_tce_q4": 35000
+  }
+}
+```

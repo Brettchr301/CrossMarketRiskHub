@@ -1,0 +1,588 @@
+{
+  "annualization": {
+    "arithmetic_annual_alpha_pct": 48.2,
+    "geometric_annual_alpha_pct": 31.334,
+    "time_weighted_annual_alpha_pct": 47.113,
+    "strategy_minus_bench_annual_pct": 62.285,
+    "strategy_annual_pct": 85.983,
+    "benchmark_annual_pct": 23.699,
+    "bootstrap_median_alpha_pct": 47.787,
+    "bootstrap_90ci": [
+      30.472,
+      67.39
+    ],
+    "n_trades": 528,
+    "n_years_actual": 5.3,
+    "n_periods_portfolio": 127,
+    "cum_portfolio_strategy": 26.7673,
+    "cum_portfolio_benchmark": 3.0855,
+    "median_of_methods": 47.787,
+    "VERDICT": "MIXED \u2014 methods diverge by 31.0pp, use median (47.8%)"
+  },
+  "outlier_dependence": {
+    "base_alpha_pct": 48.2,
+    "removals": [
+      {
+        "removed_top": 1,
+        "alpha_without_top_pct": 43.972,
+        "alpha_without_bottom_pct": 49.257,
+        "alpha_winsorized_pct": 45.023,
+        "pct_change_from_base": -8.8,
+        "top_trades_removed": [
+          "NEXT 2021-05-10 alpha=180.67%"
+        ]
+      },
+      {
+        "removed_top": 3,
+        "alpha_without_top_pct": 36.725,
+        "alpha_without_bottom_pct": 51.115,
+        "alpha_winsorized_pct": 39.591,
+        "pct_change_from_base": -23.8,
+        "top_trades_removed": [
+          "NEXT 2021-05-10 alpha=180.67%",
+          "BATL 2024-09-11 alpha=158.22%",
+          "SM 2020-11-13 alpha=150.72%"
+        ]
+      },
+      {
+        "removed_top": 5,
+        "alpha_without_top_pct": 33.308,
+        "alpha_without_bottom_pct": 52.918,
+        "alpha_winsorized_pct": 37.927,
+        "pct_change_from_base": -30.9,
+        "top_trades_removed": [
+          "NEXT 2021-05-10 alpha=180.67%",
+          "BATL 2024-09-11 alpha=158.22%",
+          "SM 2020-11-13 alpha=150.72%",
+          "REI 2021-01-13 alpha=83.31%",
+          "KOS 2020-11-13 alpha=64.35%"
+        ]
+      },
+      {
+        "removed_top": 10,
+        "alpha_without_top_pct": 26.712,
+        "alpha_without_bottom_pct": 57.146,
+        "alpha_winsorized_pct": 35.412,
+        "pct_change_from_base": -44.6,
+        "top_trades_removed": [
+          "NEXT 2021-05-10 alpha=180.67%",
+          "BATL 2024-09-11 alpha=158.22%",
+          "SM 2020-11-13 alpha=150.72%",
+          "REI 2021-01-13 alpha=83.31%",
+          "KOS 2020-11-13 alpha=64.35%"
+        ]
+      }
+    ],
+    "VERDICT": "ROBUST \u2014 alpha survives outlier removal"
+  },
+  "permutation": {
+    "actual_annual_alpha_pct": 48.2,
+    "sign_permutation_p_value": 0.0,
+    "sign_perm_mean_alpha": 0.058,
+    "sign_perm_95th_pctl": 18.788,
+    "cross_ticker_perm_p_value": 1.0,
+    "cross_perm_mean": 48.2,
+    "n_permutations": 5000,
+    "n_trades": 528,
+    "VERDICT": "SIGNIFICANT (p=0.0000) \u2014 model beats random direction at 99% confidence"
+  },
+  "regime_stability": {
+    "first_half_alpha_pct": 83.701,
+    "first_half_trades": 264,
+    "second_half_alpha_pct": 12.699,
+    "second_half_trades": 264,
+    "third_1_pct": 133.642,
+    "third_2_pct": -1.848,
+    "third_3_pct": 12.807,
+    "annual_breakdown": [
+      {
+        "year": 2020,
+        "trades": 29,
+        "annual_alpha_pct": 298.946,
+        "hit_rate_pct": 79.3
+      },
+      {
+        "year": 2021,
+        "trades": 108,
+        "annual_alpha_pct": 72.351,
+        "hit_rate_pct": 48.1
+      },
+      {
+        "year": 2022,
+        "trades": 117,
+        "annual_alpha_pct": 40.434,
+        "hit_rate_pct": 57.3
+      },
+      {
+        "year": 2023,
+        "trades": 73,
+        "annual_alpha_pct": 14.83,
+        "hit_rate_pct": 53.4
+      },
+      {
+        "year": 2024,
+        "trades": 93,
+        "annual_alpha_pct": 6.36,
+        "hit_rate_pct": 44.1
+      },
+      {
+        "year": 2025,
+        "trades": 96,
+        "annual_alpha_pct": 1.564,
+        "hit_rate_pct": 44.8
+      },
+      {
+        "year": 2026,
+        "trades": 12,
+        "annual_alpha_pct": 200.947,
+        "hit_rate_pct": 100.0
+      }
+    ],
+    "quarterly_breakdown": [
+      {
+        "quarter": "2020Q4",
+        "trades": 29,
+        "annual_alpha_pct": 298.946
+      },
+      {
+        "quarter": "2021Q1",
+        "trades": 26,
+        "annual_alpha_pct": 99.421
+      },
+      {
+        "quarter": "2021Q2",
+        "trades": 23,
+        "annual_alpha_pct": 162.988
+      },
+      {
+        "quarter": "2021Q3",
+        "trades": 31,
+        "annual_alpha_pct": 61.914
+      },
+      {
+        "quarter": "2021Q4",
+        "trades": 28,
+        "annual_alpha_pct": -15.683
+      },
+      {
+        "quarter": "2022Q1",
+        "trades": 33,
+        "annual_alpha_pct": 199.769
+      },
+      {
+        "quarter": "2022Q2",
+        "trades": 33,
+        "annual_alpha_pct": -21.154
+      },
+      {
+        "quarter": "2022Q3",
+        "trades": 19,
+        "annual_alpha_pct": 121.052
+      },
+      {
+        "quarter": "2022Q4",
+        "trades": 32,
+        "annual_alpha_pct": -108.236
+      },
+      {
+        "quarter": "2023Q1",
+        "trades": 8,
+        "annual_alpha_pct": 78.78
+      },
+      {
+        "quarter": "2023Q2",
+        "trades": 14,
+        "annual_alpha_pct": 67.795
+      },
+      {
+        "quarter": "2023Q3",
+        "trades": 33,
+        "annual_alpha_pct": 44.459
+      },
+      {
+        "quarter": "2023Q4",
+        "trades": 18,
+        "annual_alpha_pct": -109.106
+      },
+      {
+        "quarter": "2024Q1",
+        "trades": 24,
+        "annual_alpha_pct": 37.356
+      },
+      {
+        "quarter": "2024Q2",
+        "trades": 24,
+        "annual_alpha_pct": -57.766
+      },
+      {
+        "quarter": "2024Q3",
+        "trades": 18,
+        "annual_alpha_pct": 48.562
+      },
+      {
+        "quarter": "2024Q4",
+        "trades": 27,
+        "annual_alpha_pct": 7.675
+      },
+      {
+        "quarter": "2025Q1",
+        "trades": 27,
+        "annual_alpha_pct": 16.073
+      },
+      {
+        "quarter": "2025Q2",
+        "trades": 20,
+        "annual_alpha_pct": -11.799
+      },
+      {
+        "quarter": "2025Q3",
+        "trades": 29,
+        "annual_alpha_pct": -14.035
+      },
+      {
+        "quarter": "2025Q4",
+        "trades": 20,
+        "annual_alpha_pct": 17.96
+      },
+      {
+        "quarter": "2026Q1",
+        "trades": 12,
+        "annual_alpha_pct": 200.947
+      }
+    ],
+    "positive_quarters": 15,
+    "negative_quarters": 7,
+    "VERDICT": "STABLE \u2014 alpha present in multiple time periods"
+  },
+  "ticker_concentration": {
+    "total_tickers": 16,
+    "positive_alpha_tickers": 14,
+    "negative_alpha_tickers": 2,
+    "above_2pct_threshold": 13,
+    "top3_concentration_pct": 44.6,
+    "top5_concentration_pct": 65.9,
+    "top10_concentration_pct": 93.6,
+    "top_contributors": [
+      {
+        "ticker": "NEXT",
+        "trades": 43,
+        "avg_alpha_per_trade_pct": 8.015,
+        "annual_alpha_pct": 100.985,
+        "contribution_to_total_pct": 8.224,
+        "hit_rate_pct": 53.5,
+        "commodity_type": "oil_gas_upstream"
+      },
+      {
+        "ticker": "SM",
+        "trades": 37,
+        "avg_alpha_per_trade_pct": 8.798,
+        "annual_alpha_pct": 110.853,
+        "contribution_to_total_pct": 7.768,
+        "hit_rate_pct": 64.9,
+        "commodity_type": "oil_gas_upstream"
+      },
+      {
+        "ticker": "SD",
+        "trades": 33,
+        "avg_alpha_per_trade_pct": 8.165,
+        "annual_alpha_pct": 102.875,
+        "contribution_to_total_pct": 6.43,
+        "hit_rate_pct": 57.6,
+        "commodity_type": "oil_gas_upstream"
+      },
+      {
+        "ticker": "REI",
+        "trades": 32,
+        "avg_alpha_per_trade_pct": 7.086,
+        "annual_alpha_pct": 89.284,
+        "contribution_to_total_pct": 5.411,
+        "hit_rate_pct": 59.4,
+        "commodity_type": "oil_gas_upstream"
+      },
+      {
+        "ticker": "AR",
+        "trades": 45,
+        "avg_alpha_per_trade_pct": 4.921,
+        "annual_alpha_pct": 62.01,
+        "contribution_to_total_pct": 5.285,
+        "hit_rate_pct": 53.3,
+        "commodity_type": "oil_gas_upstream"
+      },
+      {
+        "ticker": "EGY",
+        "trades": 34,
+        "avg_alpha_per_trade_pct": 5.946,
+        "annual_alpha_pct": 74.924,
+        "contribution_to_total_pct": 4.825,
+        "hit_rate_pct": 50.0,
+        "commodity_type": "oil_gas_upstream"
+      },
+      {
+        "ticker": "KOS",
+        "trades": 28,
+        "avg_alpha_per_trade_pct": 4.697,
+        "annual_alpha_pct": 59.181,
+        "contribution_to_total_pct": 3.138,
+        "hit_rate_pct": 60.7,
+        "commodity_type": "oil_gas_upstream"
+      },
+      {
+        "ticker": "RING",
+        "trades": 38,
+        "avg_alpha_per_trade_pct": 2.695,
+        "annual_alpha_pct": 33.957,
+        "contribution_to_total_pct": 2.444,
+        "hit_rate_pct": 57.9,
+        "commodity_type": "oil_gas_upstream"
+      },
+      {
+        "ticker": "GPOR",
+        "trades": 34,
+        "avg_alpha_per_trade_pct": 2.801,
+        "annual_alpha_pct": 35.297,
+        "contribution_to_total_pct": 2.273,
+        "hit_rate_pct": 61.8,
+        "commodity_type": "oil_gas_upstream"
+      },
+      {
+        "ticker": "TALO",
+        "trades": 34,
+        "avg_alpha_per_trade_pct": 1.521,
+        "annual_alpha_pct": 19.165,
+        "contribution_to_total_pct": 1.234,
+        "hit_rate_pct": 52.9,
+        "commodity_type": "oil_gas_upstream"
+      }
+    ],
+    "worst_detractors": [
+      {
+        "ticker": "RRC",
+        "trades": 41,
+        "avg_alpha_per_trade_pct": 1.028,
+        "annual_alpha_pct": 12.948,
+        "contribution_to_total_pct": 1.005,
+        "hit_rate_pct": 53.7,
+        "commodity_type": "oil_gas_upstream"
+      },
+      {
+        "ticker": "BATL",
+        "trades": 37,
+        "avg_alpha_per_trade_pct": 1.121,
+        "annual_alpha_pct": 14.12,
+        "contribution_to_total_pct": 0.989,
+        "hit_rate_pct": 32.4,
+        "commodity_type": "oil_gas_upstream"
+      },
+      {
+        "ticker": "CTRA",
+        "trades": 33,
+        "avg_alpha_per_trade_pct": 0.105,
+        "annual_alpha_pct": 1.324,
+        "contribution_to_total_pct": 0.083,
+        "hit_rate_pct": 45.5,
+        "commodity_type": "oil_gas_upstream"
+      },
+      {
+        "ticker": "VTS",
+        "trades": 16,
+        "avg_alpha_per_trade_pct": -2.101,
+        "annual_alpha_pct": -26.47,
+        "contribution_to_total_pct": -0.802,
+        "hit_rate_pct": 43.8,
+        "commodity_type": "oil_gas_upstream"
+      },
+      {
+        "ticker": "TXO",
+        "trades": 10,
+        "avg_alpha_per_trade_pct": -5.324,
+        "annual_alpha_pct": -67.077,
+        "contribution_to_total_pct": -1.27,
+        "hit_rate_pct": 20.0,
+        "commodity_type": "oil_gas_upstream"
+      }
+    ],
+    "most_impactful_loto": [
+      {
+        "ticker_removed": "SM",
+        "alpha_without_pct": 43.479,
+        "change_pct": -4.721
+      },
+      {
+        "ticker_removed": "NEXT",
+        "alpha_without_pct": 43.52,
+        "change_pct": -4.68
+      },
+      {
+        "ticker_removed": "SD",
+        "alpha_without_pct": 44.555,
+        "change_pct": -3.645
+      },
+      {
+        "ticker_removed": "REI",
+        "alpha_without_pct": 45.55,
+        "change_pct": -2.651
+      },
+      {
+        "ticker_removed": "EGY",
+        "alpha_without_pct": 46.361,
+        "change_pct": -1.839
+      },
+      {
+        "ticker_removed": "BATL",
+        "alpha_without_pct": 50.768,
+        "change_pct": 2.568
+      },
+      {
+        "ticker_removed": "RRC",
+        "alpha_without_pct": 51.168,
+        "change_pct": 2.968
+      },
+      {
+        "ticker_removed": "CTRA",
+        "alpha_without_pct": 51.325,
+        "change_pct": 3.125
+      }
+    ],
+    "VERDICT": "WELL-DISTRIBUTED \u2014 alpha comes from many tickers"
+  },
+  "profit_quality": {
+    "alpha_hit_rate_pct": 52.5,
+    "avg_alpha_win_pct": 15.971,
+    "avg_alpha_loss_pct": -9.578,
+    "median_alpha_pct": 0.99,
+    "skewness": 3.128,
+    "kurtosis": 20.316,
+    "profit_factor": 1.84,
+    "kelly_fraction": 0.2395,
+    "net_hit_rate_pct": 56.2,
+    "avg_net_win_pct": 15.567,
+    "avg_net_loss_pct": -9.086,
+    "top_5_winners": [
+      {
+        "ticker": "NEXT",
+        "date": "2021-05-10",
+        "alpha_pct": 180.67
+      },
+      {
+        "ticker": "BATL",
+        "date": "2024-09-11",
+        "alpha_pct": 158.22
+      },
+      {
+        "ticker": "SM",
+        "date": "2020-11-13",
+        "alpha_pct": 150.72
+      },
+      {
+        "ticker": "REI",
+        "date": "2021-01-13",
+        "alpha_pct": 83.31
+      },
+      {
+        "ticker": "KOS",
+        "date": "2020-11-13",
+        "alpha_pct": 64.35
+      }
+    ],
+    "bottom_5_losers": [
+      {
+        "ticker": "NEXT",
+        "date": "2022-11-09",
+        "alpha_pct": -32.61
+      },
+      {
+        "ticker": "BATL",
+        "date": "2022-05-19",
+        "alpha_pct": -34.11
+      },
+      {
+        "ticker": "NEXT",
+        "date": "2024-07-16",
+        "alpha_pct": -34.47
+      },
+      {
+        "ticker": "EGY",
+        "date": "2022-06-17",
+        "alpha_pct": -35.12
+      },
+      {
+        "ticker": "BATL",
+        "date": "2024-01-23",
+        "alpha_pct": -40.38
+      }
+    ],
+    "VERDICT": "STRONG \u2014 good hit rate with positive profit factor"
+  },
+  "autocorrelation": {
+    "lag1_autocorrelation": 0.3291,
+    "runs_test_statistic": -6.1448,
+    "runs_test_p_value": 0.0,
+    "observed_runs": 194,
+    "expected_runs": 264.4,
+    "ljung_box_stat": 151.4579,
+    "ljung_box_p_value": 0.0,
+    "n_positive_alpha_trades": 277,
+    "n_negative_alpha_trades": 251,
+    "VERDICT": "CORRELATED \u2014 strong autocorrelation suggests regime dependence"
+  },
+  "significance": {
+    "t_statistic_raw": 4.2641,
+    "p_value_raw": 2.4e-05,
+    "lag1_autocorrelation": 0.3291,
+    "effective_n": 266.6,
+    "actual_n": 528,
+    "t_statistic_adjusted": 3.0297,
+    "p_value_adjusted": 0.002689,
+    "annualized_alpha_pct": 48.2,
+    "annualized_se_pct": 15.909,
+    "ci_95_pct": [
+      17.019,
+      79.382
+    ],
+    "ci_99_pct": [
+      7.219,
+      89.182
+    ],
+    "sharpe_ratio": 0.6587,
+    "deflated_sharpe_ratio_stat": -49.0459,
+    "deflated_sharpe_p_value": 1.0,
+    "expected_max_sr_from_trials": 2.832,
+    "n_assumed_trials": 1000,
+    "minimum_backtest_length_years": 0.59,
+    "actual_backtest_years": 41.9,
+    "VERDICT": "SIGNIFICANT at 95% (autocorr-adjusted) but FAILS deflated Sharpe \u2014 may be data-mined"
+  },
+  "pm_ablation": {
+    "pm_sector_trades": 528,
+    "non_pm_sector_trades": 0,
+    "pm_sector_alpha_pct": 48.2,
+    "non_pm_sector_alpha_pct": 0.0,
+    "alpha_difference": 48.2,
+    "t_statistic": 0.0,
+    "p_value": 1.0,
+    "sector_breakdown": {
+      "oil_gas_upstream": {
+        "trades": 528,
+        "alpha_pct": 48.2,
+        "hit_rate": 52.5
+      }
+    },
+    "real_pm_events": [
+      "hormuz_closure",
+      "red_sea_disruption",
+      "russia_oil_sanctions",
+      "oil_above_100"
+    ],
+    "note": "Only 4 of 56 events have real Polymarket IDs. Others default to 0.5 (constant) \u2192 zero variance \u2192 filtered out by top-15 variance pre-filter.",
+    "VERDICT": "INCONCLUSIVE \u2014 PM-sector (+48.2%) vs non-PM (+0.0%), p=1.000. Need more data."
+  },
+  "final_summary": {
+    "engine_alpha_pct": 48.2,
+    "honest_alpha_pct": 47.787,
+    "passes_2pct_bar": true,
+    "statistically_significant": true,
+    "survives_deflated_sharpe": false,
+    "ci_95_above_zero": true,
+    "FINAL_VERDICT": "CAUTIOUS \u2014 alpha passes basic tests but may not survive multiple-testing correction"
+  }
+}

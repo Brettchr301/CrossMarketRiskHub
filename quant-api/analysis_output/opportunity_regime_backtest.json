@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-03-08T05:22:53.905148",
+  "sample_start": "2020-01-02",
+  "sample_end": "2025-12-31",
+  "hold_days": 40,
+  "summary": {
+    "overall": {
+      "trade_count": 11517,
+      "hit_rate": 0.635842667361292,
+      "avg_net_return": 0.05888769313278208,
+      "median_net_return": 0.05403741077923897,
+      "p10_net_return": -0.13209886714267918,
+      "p90_net_return": 0.2577884226683722,
+      "top_decile_avg_net_return": 0.07958464461330385
+    },
+    "best_regimes": [
+      {
+        "regime": "High Hormuz Risk",
+        "trades": 200,
+        "hit_rate": 0.655,
+        "avg_net_return": 0.09083102846986592,
+        "median_net_return": 0.05618122095702284
+      },
+      {
+        "regime": "High Sanctions Risk",
+        "trades": 125,
+        "hit_rate": 0.808,
+        "avg_net_return": 0.07466067377146679,
+        "median_net_return": 0.08606435731538543
+      },
+      {
+        "regime": "High Oil>100 Probability",
+        "trades": 4962,
+        "hit_rate": 0.6390568319226119,
+        "avg_net_return": 0.05983574856919648,
+        "median_net_return": 0.049053845409459465
+      },
+      {
+        "regime": "High Red Sea Disruption",
+        "trades": 6010,
+        "hit_rate": 0.6314475873544093,
+        "avg_net_return": 0.05833229271625273,
+        "median_net_return": 0.058897615054112853
+      },
+      {
+        "regime": "Baseline/Low Geopolitical",
+        "trades": 220,
+        "hit_rate": 0.5681818181818182,
+        "avg_net_return": 0.014675946680967772,
+        "median_net_return": 0.01638926220473048
+      }
+    ],
+    "best_tickers": [
+      {
+        "ticker": "TNK",
+        "sector": "shipping",
+        "trades": 1515,
+        "hit_rate": 0.7643564356435644,
+        "avg_net_return": 0.10647274877912112,
+        "avg_signal": 0.05597031588854854
+      },
+      {
+        "ticker": "INSW",
+        "sector": "shipping",
+        "trades": 1491,
+        "hit_rate": 0.7565392354124748,
+        "avg_net_return": 0.09311486991280415,
+        "avg_signal": 0.04723203187118367
+      },
+      {
+        "ticker": "STNG",
+        "sector": "shipping",
+        "trades": 1480,
+        "hit_rate": 0.6885135135135135,
+        "avg_net_return": 0.08544134834853001,
+        "avg_signal": 0.04537162306254274
+      },
+      {
+        "ticker": "CIVI",
+        "sector": "producer",
+        "trades": 1480,
+        "hit_rate": 0.6040540540540541,
+        "avg_net_return": 0.056560736470358586,
+        "avg_signal": 0.04619617741753611
+      },
+      {
+        "ticker": "VTLE",
+        "sector": "producer",
+        "trades": 1377,
+        "hit_rate": 0.599128540305011,
+        "avg_net_return": 0.05559966868565758,
+        "avg_signal": 0.03967902260023448
+      },
+      {
+        "ticker": "GOGL",
+        "sector": "shipping",
+        "trades": 1328,
+        "hit_rate": 0.6174698795180723,
+        "avg_net_return": 0.03678160917723994,
+        "avg_signal": 0.028651494164304233
+      },
+      {
+        "ticker": "SM",
+        "sector": "producer",
+        "trades": 1447,
+        "hit_rate": 0.5362819626814098,
+        "avg_net_return": 0.019513074199606652,
+        "avg_signal": 0.04111338846648783
+      },
+      {
+        "ticker": "SBLK",
+        "sector": "shipping",
+        "trades": 1399,
+        "hit_rate": 0.5025017869907077,
+        "avg_net_return": 0.010195748179828984,
+        "avg_signal": 0.03228350531241944
+      }
+    ],
+    "best_months": [
+      {
+        "month": 1,
+        "trades": 953,
+        "hit_rate": 0.7135362014690452,
+        "avg_net_return": 0.10323506510327853
+      },
+      {
+        "month": 12,
+        "trades": 812,
+        "hit_rate": 0.7339901477832512,
+        "avg_net_return": 0.08919242131738442
+      },
+      {
+        "month": 7,
+        "trades": 1026,
+        "hit_rate": 0.7446393762183235,
+        "avg_net_return": 0.08887283356433855
+      },
+      {
+        "month": 11,
+        "trades": 817,
+        "hit_rate": 0.7221542227662179,
+        "avg_net_return": 0.08341377804369524
+      },
+      {
+        "month": 8,
+        "trades": 1016,
+        "hit_rate": 0.7165354330708661,
+        "avg_net_return": 0.0725147386768636
+      }
+    ]
+  }
+}

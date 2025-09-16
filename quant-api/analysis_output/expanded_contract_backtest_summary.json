@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-03-08T05:46:05.242068+00:00",
+  "n_contracts": 10,
+  "contracts": {
+    "hormuz_closure": {
+      "question": "Will Iran close the Strait of Hormuz in 2023?",
+      "volume": 1629.3297790000001,
+      "history_days": 74
+    },
+    "red_sea_suez": {
+      "question": "Will the Suez Canal close in 2023?",
+      "volume": 15998.325700000001,
+      "history_days": 28
+    },
+    "iran_military": {
+      "question": "Iran military response before October?",
+      "volume": 467982.229813,
+      "history_days": 42
+    },
+    "us_action_iran": {
+      "question": "U.S. military action against Iran before November?",
+      "volume": 1070645.35004,
+      "history_days": 39
+    },
+    "oil_above_100": {
+      "question": "Will crude oil hit $100 in 2023?",
+      "volume": 28439.409087,
+      "history_days": 78
+    },
+    "oil_above_120": {
+      "question": "Will crude oil hit $120 in 2023?",
+      "volume": 11435.279009,
+      "history_days": 72
+    },
+    "us_recession": {
+      "question": "U.S. Recession in 2024?",
+      "volume": 875848.13851399,
+      "history_days": 149
+    },
+    "fed_cut": {
+      "question": "Fed decreases interest rates by 75+ bps after January 2025 meeting?",
+      "volume": 48840781.093981,
+      "history_days": 83
+    },
+    "russia_ukraine_ceasefire": {
+      "question": "Russia x Ukraine ceasefire in 2025?",
+      "volume": 73752993.267722,
+      "history_days": 368
+    },
+    "lng_natgas": {
+      "question": "Ukraine agrees to resume Russian natural gas transit in January? ",
+      "volume": 172648.806471,
+      "history_days": 31
+    }
+  },
+  "window": [
+    "2024-02-28",
+    "2025-12-02"
+  ],
+  "trade_count": 1136,
+  "hit_rate": 0.3767605633802817,
+  "avg_net_return": -0.023339093862492683,
+  "median_net_return": -0.02949884387982587,
+  "best_tickers": {
+    "STNG": 0.0030340507360714286,
+    "INSW": 0.0007091312515764751,
+    "AR": -0.009704775672675097,
+    "RRC": -0.019522969714957532,
+    "MUR": -0.021171002734724654,
+    "SM": -0.02347527946122126,
+    "NAT": -0.025466823039184138,
+    "SBLK": -0.029126522439577942
+  }
+}

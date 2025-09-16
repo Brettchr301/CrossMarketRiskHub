@@ -1,0 +1,2965 @@
+{
+  "run_timestamp": "2026-03-09T14:36:16.544805",
+  "universe_size": 269,
+  "modeled_tickers": 227,
+  "total_trades": 8604,
+  "backtest_start": "2020-10-15",
+  "backtest_end": "2026-02-09",
+  "backtest_years": 5.32,
+  "overall_alpha_pct": 33.17,
+  "overall_sharpe": 3.661,
+  "overall_hit_rate": 57.5,
+  "alpha_segments": [
+    {
+      "dimension": "commodity_type",
+      "label": "lithium",
+      "annual_alpha_pct": 55.78,
+      "sharpe": 0.982,
+      "hit_rate": 55.3,
+      "trade_count": 559,
+      "ticker_count": 17,
+      "backtest_years": 5.31
+    },
+    {
+      "dimension": "cap_size",
+      "label": "small",
+      "annual_alpha_pct": 43.19,
+      "sharpe": 0.787,
+      "hit_rate": 55.0,
+      "trade_count": 1102,
+      "ticker_count": 31,
+      "backtest_years": 5.31
+    },
+    {
+      "dimension": "cap_size",
+      "label": "mid",
+      "annual_alpha_pct": 40.01,
+      "sharpe": 1.046,
+      "hit_rate": 60.1,
+      "trade_count": 2451,
+      "ticker_count": 62,
+      "backtest_years": 5.31
+    },
+    {
+      "dimension": "geography",
+      "label": "Australia",
+      "annual_alpha_pct": 37.84,
+      "sharpe": 0.754,
+      "hit_rate": 53.4,
+      "trade_count": 1244,
+      "ticker_count": 33,
+      "backtest_years": 5.31
+    },
+    {
+      "dimension": "exchange_type",
+      "label": "AU_Listed",
+      "annual_alpha_pct": 37.73,
+      "sharpe": 0.74,
+      "hit_rate": 53.1,
+      "trade_count": 1181,
+      "ticker_count": 31,
+      "backtest_years": 5.31
+    },
+    {
+      "dimension": "exchange_type",
+      "label": "CA_Listed",
+      "annual_alpha_pct": 35.64,
+      "sharpe": 0.864,
+      "hit_rate": 59.2,
+      "trade_count": 1423,
+      "ticker_count": 35,
+      "backtest_years": 5.27
+    },
+    {
+      "dimension": "geography",
+      "label": "Canada",
+      "annual_alpha_pct": 34.25,
+      "sharpe": 0.884,
+      "hit_rate": 58.5,
+      "trade_count": 2698,
+      "ticker_count": 68,
+      "backtest_years": 5.28
+    },
+    {
+      "dimension": "exchange_type",
+      "label": "Asian",
+      "annual_alpha_pct": 33.91,
+      "sharpe": 1.085,
+      "hit_rate": 60.4,
+      "trade_count": 303,
+      "ticker_count": 8,
+      "backtest_years": 5.25
+    },
+    {
+      "dimension": "war_proximity",
+      "label": "non_war",
+      "annual_alpha_pct": 33.65,
+      "sharpe": 0.813,
+      "hit_rate": 57.3,
+      "trade_count": 7809,
+      "ticker_count": 206,
+      "backtest_years": 5.32
+    },
+    {
+      "dimension": "cap_size",
+      "label": "micro",
+      "annual_alpha_pct": 33.46,
+      "sharpe": 0.513,
+      "hit_rate": 47.3,
+      "trade_count": 1097,
+      "ticker_count": 33,
+      "backtest_years": 5.31
+    },
+    {
+      "dimension": "geography",
+      "label": "US",
+      "annual_alpha_pct": 33.4,
+      "sharpe": 0.777,
+      "hit_rate": 57.6,
+      "trade_count": 3119,
+      "ticker_count": 84,
+      "backtest_years": 5.31
+    },
+    {
+      "dimension": "exchange_type",
+      "label": "US_Listed",
+      "annual_alpha_pct": 32.52,
+      "sharpe": 0.822,
+      "hit_rate": 58.0,
+      "trade_count": 4952,
+      "ticker_count": 131,
+      "backtest_years": 5.31
+    },
+    {
+      "dimension": "geography",
+      "label": "Emerging",
+      "annual_alpha_pct": 30.99,
+      "sharpe": 0.978,
+      "hit_rate": 59.4,
+      "trade_count": 789,
+      "ticker_count": 20,
+      "backtest_years": 5.27
+    },
+    {
+      "dimension": "war_proximity",
+      "label": "near_war",
+      "annual_alpha_pct": 29.18,
+      "sharpe": 0.915,
+      "hit_rate": 58.8,
+      "trade_count": 486,
+      "ticker_count": 12,
+      "backtest_years": 5.26
+    },
+    {
+      "dimension": "war_proximity",
+      "label": "war_zone",
+      "annual_alpha_pct": 27.43,
+      "sharpe": 0.889,
+      "hit_rate": 59.5,
+      "trade_count": 309,
+      "ticker_count": 9,
+      "backtest_years": 5.3
+    },
+    {
+      "dimension": "cap_size",
+      "label": "large",
+      "annual_alpha_pct": 26.07,
+      "sharpe": 0.956,
+      "hit_rate": 59.4,
+      "trade_count": 3954,
+      "ticker_count": 101,
+      "backtest_years": 5.32
+    },
+    {
+      "dimension": "exchange_type",
+      "label": "European",
+      "annual_alpha_pct": 25.45,
+      "sharpe": 0.891,
+      "hit_rate": 57.6,
+      "trade_count": 635,
+      "ticker_count": 19,
+      "backtest_years": 5.31
+    },
+    {
+      "dimension": "geography",
+      "label": "Europe_Core",
+      "annual_alpha_pct": 24.7,
+      "sharpe": 0.829,
+      "hit_rate": 57.3,
+      "trade_count": 433,
+      "ticker_count": 13,
+      "backtest_years": 5.28
+    },
+    {
+      "dimension": "exchange_type",
+      "label": "EM_Listed",
+      "annual_alpha_pct": 24.31,
+      "sharpe": 0.789,
+      "hit_rate": 53.6,
+      "trade_count": 110,
+      "ticker_count": 3,
+      "backtest_years": 5.15
+    },
+    {
+      "dimension": "commodity_type",
+      "label": "oil_refining",
+      "annual_alpha_pct": 23.54,
+      "sharpe": 0.97,
+      "hit_rate": 61.1,
+      "trade_count": 772,
+      "ticker_count": 20,
+      "backtest_years": 5.32
+    },
+    {
+      "dimension": "geography",
+      "label": "Europe_Periphery",
+      "annual_alpha_pct": 20.6,
+      "sharpe": 1.06,
+      "hit_rate": 59.8,
+      "trade_count": 321,
+      "ticker_count": 9,
+      "backtest_years": 5.32
+    },
+    {
+      "dimension": "commodity_type",
+      "label": "oil_services",
+      "annual_alpha_pct": 19.09,
+      "sharpe": 0.916,
+      "hit_rate": 59.1,
+      "trade_count": 562,
+      "ticker_count": 15,
+      "backtest_years": 5.3
+    },
+    {
+      "dimension": "commodity_type",
+      "label": "uranium",
+      "annual_alpha_pct": 18.1,
+      "sharpe": 0.764,
+      "hit_rate": 55.0,
+      "trade_count": 747,
+      "ticker_count": 18,
+      "backtest_years": 5.31
+    },
+    {
+      "dimension": "commodity_type",
+      "label": "precious_metals",
+      "annual_alpha_pct": 17.02,
+      "sharpe": 0.957,
+      "hit_rate": 57.0,
+      "trade_count": 1420,
+      "ticker_count": 36,
+      "backtest_years": 5.31
+    },
+    {
+      "dimension": "commodity_type",
+      "label": "rare_earths",
+      "annual_alpha_pct": 13.6,
+      "sharpe": 0.583,
+      "hit_rate": 49.8,
+      "trade_count": 538,
+      "ticker_count": 16,
+      "backtest_years": 5.31
+    },
+    {
+      "dimension": "commodity_type",
+      "label": "oil_gas_upstream",
+      "annual_alpha_pct": 11.67,
+      "sharpe": 0.82,
+      "hit_rate": 57.7,
+      "trade_count": 3255,
+      "ticker_count": 87,
+      "backtest_years": 5.31
+    },
+    {
+      "dimension": "commodity_type",
+      "label": "midstream",
+      "annual_alpha_pct": 10.84,
+      "sharpe": 1.086,
+      "hit_rate": 62.6,
+      "trade_count": 751,
+      "ticker_count": 18,
+      "backtest_years": 5.31
+    }
+  ],
+  "weak_segments": [],
+  "segments": {
+    "cap_size": [
+      {
+        "label": "small",
+        "benchmark_ticker": "XME",
+        "ticker_count": 31,
+        "trade_count": 1102,
+        "annual_alpha_pct": 43.19,
+        "sharpe_ratio": 0.787,
+        "hit_rate_pct": 55.0,
+        "max_drawdown_pct": -87.04,
+        "information_ratio": 0.602,
+        "gross_annual_return_pct": 57.37,
+        "benchmark_annual_return_pct": 14.19,
+        "cost_drag_annual_pct": 8.76,
+        "volatility_annual_pct": 72.94,
+        "backtest_years": 5.31,
+        "top_performers": [
+          {
+            "ticker": "CXO.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 10.273,
+            "hit_rate": 55.6
+          },
+          {
+            "ticker": "SGML",
+            "country": "CA",
+            "commodity_type": "lithium",
+            "trade_count": 40,
+            "avg_alpha_per_trade": 9.194,
+            "hit_rate": 70.0
+          },
+          {
+            "ticker": "LAC",
+            "country": "CA",
+            "commodity_type": "lithium",
+            "trade_count": 12,
+            "avg_alpha_per_trade": 7.827,
+            "hit_rate": 41.7
+          },
+          {
+            "ticker": "SLI",
+            "country": "US",
+            "commodity_type": "lithium",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 7.179,
+            "hit_rate": 58.3
+          },
+          {
+            "ticker": "CJ.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 50,
+            "avg_alpha_per_trade": 6.637,
+            "hit_rate": 68.0
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "REPX",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 43,
+            "avg_alpha_per_trade": -0.279,
+            "hit_rate": 51.2
+          },
+          {
+            "ticker": "GRNT",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 25,
+            "avg_alpha_per_trade": -0.747,
+            "hit_rate": 48.0
+          },
+          {
+            "ticker": "KAR.AX",
+            "country": "AU",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 40,
+            "avg_alpha_per_trade": -0.776,
+            "hit_rate": 45.0
+          },
+          {
+            "ticker": "VTS",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 16,
+            "avg_alpha_per_trade": -2.081,
+            "hit_rate": 50.0
+          },
+          {
+            "ticker": "CAPL",
+            "country": "US",
+            "commodity_type": "oil_refining",
+            "trade_count": 29,
+            "avg_alpha_per_trade": -2.137,
+            "hit_rate": 51.7
+          }
+        ]
+      },
+      {
+        "label": "mid",
+        "benchmark_ticker": "XLE",
+        "ticker_count": 62,
+        "trade_count": 2451,
+        "annual_alpha_pct": 40.01,
+        "sharpe_ratio": 1.046,
+        "hit_rate_pct": 60.1,
+        "max_drawdown_pct": -78.59,
+        "information_ratio": 0.759,
+        "gross_annual_return_pct": 55.06,
+        "benchmark_annual_return_pct": 15.05,
+        "cost_drag_annual_pct": 5.04,
+        "volatility_annual_pct": 52.63,
+        "backtest_years": 5.31,
+        "top_performers": [
+          {
+            "ticker": "SM",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 9.101,
+            "hit_rate": 56.8
+          },
+          {
+            "ticker": "LTR.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 41,
+            "avg_alpha_per_trade": 8.821,
+            "hit_rate": 63.4
+          },
+          {
+            "ticker": "PDN.AX",
+            "country": "AU",
+            "commodity_type": "uranium",
+            "trade_count": 41,
+            "avg_alpha_per_trade": 7.158,
+            "hit_rate": 63.4
+          },
+          {
+            "ticker": "VAL",
+            "country": "US",
+            "commodity_type": "oil_services",
+            "trade_count": 29,
+            "avg_alpha_per_trade": 6.728,
+            "hit_rate": 69.0
+          },
+          {
+            "ticker": "NVA.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 42,
+            "avg_alpha_per_trade": 6.078,
+            "hit_rate": 69.0
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "CRGY",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 18,
+            "avg_alpha_per_trade": -0.23,
+            "hit_rate": 66.7
+          },
+          {
+            "ticker": "NOG",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 28,
+            "avg_alpha_per_trade": -0.511,
+            "hit_rate": 50.0
+          },
+          {
+            "ticker": "ILU.AX",
+            "country": "AU",
+            "commodity_type": "rare_earths",
+            "trade_count": 43,
+            "avg_alpha_per_trade": -0.969,
+            "hit_rate": 46.5
+          },
+          {
+            "ticker": "BPT.AX",
+            "country": "AU",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": -1.341,
+            "hit_rate": 51.4
+          },
+          {
+            "ticker": "GPOR",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 31,
+            "avg_alpha_per_trade": -1.552,
+            "hit_rate": 58.1
+          }
+        ]
+      },
+      {
+        "label": "micro",
+        "benchmark_ticker": "XME",
+        "ticker_count": 33,
+        "trade_count": 1097,
+        "annual_alpha_pct": 33.46,
+        "sharpe_ratio": 0.513,
+        "hit_rate_pct": 47.3,
+        "max_drawdown_pct": -91.49,
+        "information_ratio": 0.359,
+        "gross_annual_return_pct": 48.56,
+        "benchmark_annual_return_pct": 15.1,
+        "cost_drag_annual_pct": 14.1,
+        "volatility_annual_pct": 94.58,
+        "backtest_years": 5.31,
+        "top_performers": [
+          {
+            "ticker": "JOY.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 9.982,
+            "hit_rate": 62.2
+          },
+          {
+            "ticker": "LI.V",
+            "country": "CA",
+            "commodity_type": "lithium",
+            "trade_count": 33,
+            "avg_alpha_per_trade": 8.189,
+            "hit_rate": 39.4
+          },
+          {
+            "ticker": "VNCE",
+            "country": "US",
+            "commodity_type": "rare_earths",
+            "trade_count": 38,
+            "avg_alpha_per_trade": 7.725,
+            "hit_rate": 42.1
+          },
+          {
+            "ticker": "LKE.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 32,
+            "avg_alpha_per_trade": 7.282,
+            "hit_rate": 43.8
+          },
+          {
+            "ticker": "TRX",
+            "country": "US",
+            "commodity_type": "precious_metals",
+            "trade_count": 31,
+            "avg_alpha_per_trade": 6.599,
+            "hit_rate": 48.4
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "CVN.AX",
+            "country": "AU",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 31,
+            "avg_alpha_per_trade": -1.788,
+            "hit_rate": 38.7
+          },
+          {
+            "ticker": "TORQ.V",
+            "country": "CA",
+            "commodity_type": "precious_metals",
+            "trade_count": 33,
+            "avg_alpha_per_trade": -2.109,
+            "hit_rate": 51.5
+          },
+          {
+            "ticker": "IONR",
+            "country": "US",
+            "commodity_type": "lithium",
+            "trade_count": 13,
+            "avg_alpha_per_trade": -2.285,
+            "hit_rate": 46.2
+          },
+          {
+            "ticker": "BATL",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 34,
+            "avg_alpha_per_trade": -2.693,
+            "hit_rate": 38.2
+          },
+          {
+            "ticker": "RBY.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 30,
+            "avg_alpha_per_trade": -4.093,
+            "hit_rate": 43.3
+          }
+        ]
+      },
+      {
+        "label": "large",
+        "benchmark_ticker": "XLE",
+        "ticker_count": 101,
+        "trade_count": 3954,
+        "annual_alpha_pct": 26.07,
+        "sharpe_ratio": 0.956,
+        "hit_rate_pct": 59.4,
+        "max_drawdown_pct": -73.59,
+        "information_ratio": 0.59,
+        "gross_annual_return_pct": 41.44,
+        "benchmark_annual_return_pct": 15.37,
+        "cost_drag_annual_pct": 3.55,
+        "volatility_annual_pct": 43.36,
+        "backtest_years": 5.32,
+        "top_performers": [
+          {
+            "ticker": "PR",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 49,
+            "avg_alpha_per_trade": 7.988,
+            "hit_rate": 69.4
+          },
+          {
+            "ticker": "GNENF",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 28,
+            "avg_alpha_per_trade": 7.549,
+            "hit_rate": 67.9
+          },
+          {
+            "ticker": "028300.KS",
+            "country": "KR",
+            "commodity_type": "oil_refining",
+            "trade_count": 29,
+            "avg_alpha_per_trade": 6.866,
+            "hit_rate": 65.5
+          },
+          {
+            "ticker": "OXY",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 32,
+            "avg_alpha_per_trade": 6.688,
+            "hit_rate": 68.8
+          },
+          {
+            "ticker": "PLS.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 44,
+            "avg_alpha_per_trade": 6.235,
+            "hit_rate": 56.8
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "PAAS",
+            "country": "CA",
+            "commodity_type": "precious_metals",
+            "trade_count": 40,
+            "avg_alpha_per_trade": -0.502,
+            "hit_rate": 47.5
+          },
+          {
+            "ticker": "ENB",
+            "country": "CA",
+            "commodity_type": "midstream",
+            "trade_count": 32,
+            "avg_alpha_per_trade": -0.508,
+            "hit_rate": 50.0
+          },
+          {
+            "ticker": "STO.AX",
+            "country": "AU",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 33,
+            "avg_alpha_per_trade": -0.542,
+            "hit_rate": 45.5
+          },
+          {
+            "ticker": "RIO.AX",
+            "country": "AU",
+            "commodity_type": "rare_earths",
+            "trade_count": 41,
+            "avg_alpha_per_trade": -0.626,
+            "hit_rate": 61.0
+          },
+          {
+            "ticker": "TLW.L",
+            "country": "UK",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 35,
+            "avg_alpha_per_trade": -0.688,
+            "hit_rate": 45.7
+          }
+        ]
+      }
+    ],
+    "geography": [
+      {
+        "label": "Australia",
+        "benchmark_ticker": "EWA",
+        "ticker_count": 33,
+        "trade_count": 1244,
+        "annual_alpha_pct": 37.84,
+        "sharpe_ratio": 0.754,
+        "hit_rate_pct": 53.4,
+        "max_drawdown_pct": -90.36,
+        "information_ratio": 0.527,
+        "gross_annual_return_pct": 55.42,
+        "benchmark_annual_return_pct": 17.57,
+        "cost_drag_annual_pct": 7.92,
+        "volatility_annual_pct": 73.54,
+        "backtest_years": 5.31,
+        "top_performers": [
+          {
+            "ticker": "CXO.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 10.273,
+            "hit_rate": 55.6
+          },
+          {
+            "ticker": "LTR.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 41,
+            "avg_alpha_per_trade": 8.821,
+            "hit_rate": 63.4
+          },
+          {
+            "ticker": "GNENF",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 28,
+            "avg_alpha_per_trade": 7.549,
+            "hit_rate": 67.9
+          },
+          {
+            "ticker": "LKE.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 32,
+            "avg_alpha_per_trade": 7.282,
+            "hit_rate": 43.8
+          },
+          {
+            "ticker": "PDN.AX",
+            "country": "AU",
+            "commodity_type": "uranium",
+            "trade_count": 41,
+            "avg_alpha_per_trade": 7.158,
+            "hit_rate": 63.4
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "ILU.AX",
+            "country": "AU",
+            "commodity_type": "rare_earths",
+            "trade_count": 43,
+            "avg_alpha_per_trade": -0.969,
+            "hit_rate": 46.5
+          },
+          {
+            "ticker": "PEN.AX",
+            "country": "AU",
+            "commodity_type": "uranium",
+            "trade_count": 40,
+            "avg_alpha_per_trade": -1.022,
+            "hit_rate": 45.0
+          },
+          {
+            "ticker": "BPT.AX",
+            "country": "AU",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": -1.341,
+            "hit_rate": 51.4
+          },
+          {
+            "ticker": "HAS.AX",
+            "country": "AU",
+            "commodity_type": "rare_earths",
+            "trade_count": 33,
+            "avg_alpha_per_trade": -1.554,
+            "hit_rate": 33.3
+          },
+          {
+            "ticker": "CVN.AX",
+            "country": "AU",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 31,
+            "avg_alpha_per_trade": -1.788,
+            "hit_rate": 38.7
+          }
+        ]
+      },
+      {
+        "label": "Canada",
+        "benchmark_ticker": "EWC",
+        "ticker_count": 68,
+        "trade_count": 2698,
+        "annual_alpha_pct": 34.25,
+        "sharpe_ratio": 0.884,
+        "hit_rate_pct": 58.5,
+        "max_drawdown_pct": -91.42,
+        "information_ratio": 0.611,
+        "gross_annual_return_pct": 49.5,
+        "benchmark_annual_return_pct": 15.25,
+        "cost_drag_annual_pct": 6.25,
+        "volatility_annual_pct": 55.97,
+        "backtest_years": 5.28,
+        "top_performers": [
+          {
+            "ticker": "JOY.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 9.982,
+            "hit_rate": 62.2
+          },
+          {
+            "ticker": "SGML",
+            "country": "CA",
+            "commodity_type": "lithium",
+            "trade_count": 40,
+            "avg_alpha_per_trade": 9.194,
+            "hit_rate": 70.0
+          },
+          {
+            "ticker": "LI.V",
+            "country": "CA",
+            "commodity_type": "lithium",
+            "trade_count": 33,
+            "avg_alpha_per_trade": 8.189,
+            "hit_rate": 39.4
+          },
+          {
+            "ticker": "LAC",
+            "country": "CA",
+            "commodity_type": "lithium",
+            "trade_count": 12,
+            "avg_alpha_per_trade": 7.827,
+            "hit_rate": 41.7
+          },
+          {
+            "ticker": "CJ.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 50,
+            "avg_alpha_per_trade": 6.637,
+            "hit_rate": 68.0
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "ENB",
+            "country": "CA",
+            "commodity_type": "midstream",
+            "trade_count": 32,
+            "avg_alpha_per_trade": -0.508,
+            "hit_rate": 50.0
+          },
+          {
+            "ticker": "GLO",
+            "country": "CA",
+            "commodity_type": "uranium",
+            "trade_count": 29,
+            "avg_alpha_per_trade": -1.583,
+            "hit_rate": 48.3
+          },
+          {
+            "ticker": "FSY.TO",
+            "country": "CA",
+            "commodity_type": "uranium",
+            "trade_count": 38,
+            "avg_alpha_per_trade": -1.74,
+            "hit_rate": 42.1
+          },
+          {
+            "ticker": "TORQ.V",
+            "country": "CA",
+            "commodity_type": "precious_metals",
+            "trade_count": 33,
+            "avg_alpha_per_trade": -2.109,
+            "hit_rate": 51.5
+          },
+          {
+            "ticker": "RBY.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 30,
+            "avg_alpha_per_trade": -4.093,
+            "hit_rate": 43.3
+          }
+        ]
+      },
+      {
+        "label": "US",
+        "benchmark_ticker": "XLE",
+        "ticker_count": 84,
+        "trade_count": 3119,
+        "annual_alpha_pct": 33.4,
+        "sharpe_ratio": 0.777,
+        "hit_rate_pct": 57.6,
+        "max_drawdown_pct": -87.04,
+        "information_ratio": 0.548,
+        "gross_annual_return_pct": 47.41,
+        "benchmark_annual_return_pct": 14.01,
+        "cost_drag_annual_pct": 6.15,
+        "volatility_annual_pct": 61.01,
+        "backtest_years": 5.31,
+        "top_performers": [
+          {
+            "ticker": "SM",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 9.101,
+            "hit_rate": 56.8
+          },
+          {
+            "ticker": "PR",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 49,
+            "avg_alpha_per_trade": 7.988,
+            "hit_rate": 69.4
+          },
+          {
+            "ticker": "VNCE",
+            "country": "US",
+            "commodity_type": "rare_earths",
+            "trade_count": 38,
+            "avg_alpha_per_trade": 7.725,
+            "hit_rate": 42.1
+          },
+          {
+            "ticker": "SLI",
+            "country": "US",
+            "commodity_type": "lithium",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 7.179,
+            "hit_rate": 58.3
+          },
+          {
+            "ticker": "VAL",
+            "country": "US",
+            "commodity_type": "oil_services",
+            "trade_count": 29,
+            "avg_alpha_per_trade": 6.728,
+            "hit_rate": 69.0
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "GPOR",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 31,
+            "avg_alpha_per_trade": -1.552,
+            "hit_rate": 58.1
+          },
+          {
+            "ticker": "VTS",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 16,
+            "avg_alpha_per_trade": -2.081,
+            "hit_rate": 50.0
+          },
+          {
+            "ticker": "CAPL",
+            "country": "US",
+            "commodity_type": "oil_refining",
+            "trade_count": 29,
+            "avg_alpha_per_trade": -2.137,
+            "hit_rate": 51.7
+          },
+          {
+            "ticker": "IONR",
+            "country": "US",
+            "commodity_type": "lithium",
+            "trade_count": 13,
+            "avg_alpha_per_trade": -2.285,
+            "hit_rate": 46.2
+          },
+          {
+            "ticker": "BATL",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 34,
+            "avg_alpha_per_trade": -2.693,
+            "hit_rate": 38.2
+          }
+        ]
+      },
+      {
+        "label": "Emerging",
+        "benchmark_ticker": "EEM",
+        "ticker_count": 20,
+        "trade_count": 789,
+        "annual_alpha_pct": 30.99,
+        "sharpe_ratio": 0.978,
+        "hit_rate_pct": 59.4,
+        "max_drawdown_pct": -73.59,
+        "information_ratio": 0.642,
+        "gross_annual_return_pct": 46.54,
+        "benchmark_annual_return_pct": 15.55,
+        "cost_drag_annual_pct": 3.68,
+        "volatility_annual_pct": 47.58,
+        "backtest_years": 5.27,
+        "top_performers": [
+          {
+            "ticker": "028300.KS",
+            "country": "KR",
+            "commodity_type": "oil_refining",
+            "trade_count": 29,
+            "avg_alpha_per_trade": 6.866,
+            "hit_rate": 65.5
+          },
+          {
+            "ticker": "YPF",
+            "country": "AR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 42,
+            "avg_alpha_per_trade": 5.173,
+            "hit_rate": 59.5
+          },
+          {
+            "ticker": "VIST",
+            "country": "AR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 49,
+            "avg_alpha_per_trade": 4.603,
+            "hit_rate": 63.3
+          },
+          {
+            "ticker": "MRPL.NS",
+            "country": "IN",
+            "commodity_type": "oil_refining",
+            "trade_count": 45,
+            "avg_alpha_per_trade": 4.46,
+            "hit_rate": 60.0
+          },
+          {
+            "ticker": "RECV3.SA",
+            "country": "BR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 21,
+            "avg_alpha_per_trade": 3.898,
+            "hit_rate": 61.9
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "BPCL.NS",
+            "country": "IN",
+            "commodity_type": "oil_refining",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 1.253,
+            "hit_rate": 63.9
+          },
+          {
+            "ticker": "EC",
+            "country": "CO",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 43,
+            "avg_alpha_per_trade": 1.021,
+            "hit_rate": 65.1
+          },
+          {
+            "ticker": "PETR4.SA",
+            "country": "BR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 44,
+            "avg_alpha_per_trade": 0.376,
+            "hit_rate": 50.0
+          },
+          {
+            "ticker": "PBR",
+            "country": "BR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 41,
+            "avg_alpha_per_trade": -0.016,
+            "hit_rate": 61.0
+          },
+          {
+            "ticker": "096770.KS",
+            "country": "KR",
+            "commodity_type": "oil_refining",
+            "trade_count": 28,
+            "avg_alpha_per_trade": -0.351,
+            "hit_rate": 46.4
+          }
+        ]
+      },
+      {
+        "label": "Europe_Core",
+        "benchmark_ticker": "VGK",
+        "ticker_count": 13,
+        "trade_count": 433,
+        "annual_alpha_pct": 24.7,
+        "sharpe_ratio": 0.829,
+        "hit_rate_pct": 57.3,
+        "max_drawdown_pct": -66.35,
+        "information_ratio": 0.492,
+        "gross_annual_return_pct": 40.2,
+        "benchmark_annual_return_pct": 15.49,
+        "cost_drag_annual_pct": 3.71,
+        "volatility_annual_pct": 48.49,
+        "backtest_years": 5.28,
+        "top_performers": [
+          {
+            "ticker": "FRES.L",
+            "country": "UK",
+            "commodity_type": "precious_metals",
+            "trade_count": 26,
+            "avg_alpha_per_trade": 5.205,
+            "hit_rate": 69.2
+          },
+          {
+            "ticker": "HOC.L",
+            "country": "UK",
+            "commodity_type": "precious_metals",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 4.387,
+            "hit_rate": 63.9
+          },
+          {
+            "ticker": "PTAL.L",
+            "country": "UK",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 3.862,
+            "hit_rate": 52.8
+          },
+          {
+            "ticker": "ITM.L",
+            "country": "UK",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 25,
+            "avg_alpha_per_trade": 3.384,
+            "hit_rate": 40.0
+          },
+          {
+            "ticker": "SQZ.L",
+            "country": "UK",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 31,
+            "avg_alpha_per_trade": 2.649,
+            "hit_rate": 58.1
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "SHEL",
+            "country": "UK",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 39,
+            "avg_alpha_per_trade": 0.943,
+            "hit_rate": 71.8
+          },
+          {
+            "ticker": "HBR.L",
+            "country": "UK",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 22,
+            "avg_alpha_per_trade": 0.788,
+            "hit_rate": 54.5
+          },
+          {
+            "ticker": "CAPD.L",
+            "country": "UK",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 38,
+            "avg_alpha_per_trade": 0.367,
+            "hit_rate": 57.9
+          },
+          {
+            "ticker": "TTE",
+            "country": "FR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 40,
+            "avg_alpha_per_trade": -0.22,
+            "hit_rate": 57.5
+          },
+          {
+            "ticker": "TLW.L",
+            "country": "UK",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 35,
+            "avg_alpha_per_trade": -0.688,
+            "hit_rate": 45.7
+          }
+        ]
+      },
+      {
+        "label": "Europe_Periphery",
+        "benchmark_ticker": "VGK",
+        "ticker_count": 9,
+        "trade_count": 321,
+        "annual_alpha_pct": 20.6,
+        "sharpe_ratio": 1.06,
+        "hit_rate_pct": 59.8,
+        "max_drawdown_pct": -35.25,
+        "information_ratio": 0.608,
+        "gross_annual_return_pct": 33.61,
+        "benchmark_annual_return_pct": 13.0,
+        "cost_drag_annual_pct": 3.53,
+        "volatility_annual_pct": 31.71,
+        "backtest_years": 5.32,
+        "top_performers": [
+          {
+            "ticker": "REP.MC",
+            "country": "ES",
+            "commodity_type": "oil_refining",
+            "trade_count": 30,
+            "avg_alpha_per_trade": 4.412,
+            "hit_rate": 70.0
+          },
+          {
+            "ticker": "AKSO.OL",
+            "country": "NO",
+            "commodity_type": "oil_services",
+            "trade_count": 46,
+            "avg_alpha_per_trade": 3.26,
+            "hit_rate": 58.7
+          },
+          {
+            "ticker": "EQNR",
+            "country": "NO",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 40,
+            "avg_alpha_per_trade": 1.58,
+            "hit_rate": 57.5
+          },
+          {
+            "ticker": "EQNR.OL",
+            "country": "NO",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 1.528,
+            "hit_rate": 64.9
+          },
+          {
+            "ticker": "ENI.MI",
+            "country": "IT",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 44,
+            "avg_alpha_per_trade": 1.293,
+            "hit_rate": 54.5
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "ENI.MI",
+            "country": "IT",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 44,
+            "avg_alpha_per_trade": 1.293,
+            "hit_rate": 54.5
+          },
+          {
+            "ticker": "VAR.OL",
+            "country": "NO",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 18,
+            "avg_alpha_per_trade": 1.038,
+            "hit_rate": 55.6
+          },
+          {
+            "ticker": "AKRBP.OL",
+            "country": "NO",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 0.768,
+            "hit_rate": 63.9
+          },
+          {
+            "ticker": "GALP.LS",
+            "country": "PT",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 0.418,
+            "hit_rate": 56.8
+          },
+          {
+            "ticker": "PKN.WA",
+            "country": "PL",
+            "commodity_type": "oil_refining",
+            "trade_count": 33,
+            "avg_alpha_per_trade": 0.126,
+            "hit_rate": 57.6
+          }
+        ]
+      }
+    ],
+    "war_proximity": [
+      {
+        "label": "non_war",
+        "benchmark_ticker": "SPY",
+        "ticker_count": 206,
+        "trade_count": 7809,
+        "annual_alpha_pct": 33.65,
+        "sharpe_ratio": 0.813,
+        "hit_rate_pct": 57.3,
+        "max_drawdown_pct": -91.49,
+        "information_ratio": 0.563,
+        "gross_annual_return_pct": 48.83,
+        "benchmark_annual_return_pct": 15.19,
+        "cost_drag_annual_pct": 6.22,
+        "volatility_annual_pct": 60.04,
+        "backtest_years": 5.32,
+        "top_performers": [
+          {
+            "ticker": "CXO.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 10.273,
+            "hit_rate": 55.6
+          },
+          {
+            "ticker": "JOY.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 9.982,
+            "hit_rate": 62.2
+          },
+          {
+            "ticker": "SGML",
+            "country": "CA",
+            "commodity_type": "lithium",
+            "trade_count": 40,
+            "avg_alpha_per_trade": 9.194,
+            "hit_rate": 70.0
+          },
+          {
+            "ticker": "SM",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 9.101,
+            "hit_rate": 56.8
+          },
+          {
+            "ticker": "LTR.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 41,
+            "avg_alpha_per_trade": 8.821,
+            "hit_rate": 63.4
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "TORQ.V",
+            "country": "CA",
+            "commodity_type": "precious_metals",
+            "trade_count": 33,
+            "avg_alpha_per_trade": -2.109,
+            "hit_rate": 51.5
+          },
+          {
+            "ticker": "CAPL",
+            "country": "US",
+            "commodity_type": "oil_refining",
+            "trade_count": 29,
+            "avg_alpha_per_trade": -2.137,
+            "hit_rate": 51.7
+          },
+          {
+            "ticker": "IONR",
+            "country": "US",
+            "commodity_type": "lithium",
+            "trade_count": 13,
+            "avg_alpha_per_trade": -2.285,
+            "hit_rate": 46.2
+          },
+          {
+            "ticker": "BATL",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 34,
+            "avg_alpha_per_trade": -2.693,
+            "hit_rate": 38.2
+          },
+          {
+            "ticker": "RBY.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 30,
+            "avg_alpha_per_trade": -4.093,
+            "hit_rate": 43.3
+          }
+        ]
+      },
+      {
+        "label": "near_war",
+        "benchmark_ticker": "EEM",
+        "ticker_count": 12,
+        "trade_count": 486,
+        "annual_alpha_pct": 29.18,
+        "sharpe_ratio": 0.915,
+        "hit_rate_pct": 58.8,
+        "max_drawdown_pct": -66.16,
+        "information_ratio": 0.586,
+        "gross_annual_return_pct": 44.59,
+        "benchmark_annual_return_pct": 15.42,
+        "cost_drag_annual_pct": 3.6,
+        "volatility_annual_pct": 48.72,
+        "backtest_years": 5.26,
+        "top_performers": [
+          {
+            "ticker": "YPF",
+            "country": "AR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 42,
+            "avg_alpha_per_trade": 5.173,
+            "hit_rate": 59.5
+          },
+          {
+            "ticker": "VIST",
+            "country": "AR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 49,
+            "avg_alpha_per_trade": 4.603,
+            "hit_rate": 63.3
+          },
+          {
+            "ticker": "RECV3.SA",
+            "country": "BR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 21,
+            "avg_alpha_per_trade": 3.898,
+            "hit_rate": 61.9
+          },
+          {
+            "ticker": "SQM",
+            "country": "CL",
+            "commodity_type": "lithium",
+            "trade_count": 33,
+            "avg_alpha_per_trade": 2.991,
+            "hit_rate": 60.6
+          },
+          {
+            "ticker": "PRIO3.SA",
+            "country": "BR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 45,
+            "avg_alpha_per_trade": 2.53,
+            "hit_rate": 53.3
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "SBSW",
+            "country": "ZA",
+            "commodity_type": "precious_metals",
+            "trade_count": 35,
+            "avg_alpha_per_trade": 1.788,
+            "hit_rate": 62.9
+          },
+          {
+            "ticker": "GFI",
+            "country": "ZA",
+            "commodity_type": "precious_metals",
+            "trade_count": 45,
+            "avg_alpha_per_trade": 1.676,
+            "hit_rate": 60.0
+          },
+          {
+            "ticker": "EC",
+            "country": "CO",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 43,
+            "avg_alpha_per_trade": 1.021,
+            "hit_rate": 65.1
+          },
+          {
+            "ticker": "PETR4.SA",
+            "country": "BR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 44,
+            "avg_alpha_per_trade": 0.376,
+            "hit_rate": 50.0
+          },
+          {
+            "ticker": "PBR",
+            "country": "BR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 41,
+            "avg_alpha_per_trade": -0.016,
+            "hit_rate": 61.0
+          }
+        ]
+      },
+      {
+        "label": "war_zone",
+        "benchmark_ticker": "EEM",
+        "ticker_count": 9,
+        "trade_count": 309,
+        "annual_alpha_pct": 27.43,
+        "sharpe_ratio": 0.889,
+        "hit_rate_pct": 59.5,
+        "max_drawdown_pct": -73.59,
+        "information_ratio": 0.609,
+        "gross_annual_return_pct": 39.68,
+        "benchmark_annual_return_pct": 12.25,
+        "cost_drag_annual_pct": 3.92,
+        "volatility_annual_pct": 44.65,
+        "backtest_years": 5.3,
+        "top_performers": [
+          {
+            "ticker": "028300.KS",
+            "country": "KR",
+            "commodity_type": "oil_refining",
+            "trade_count": 29,
+            "avg_alpha_per_trade": 6.866,
+            "hit_rate": 65.5
+          },
+          {
+            "ticker": "267250.KS",
+            "country": "KR",
+            "commodity_type": "oil_refining",
+            "trade_count": 42,
+            "avg_alpha_per_trade": 3.887,
+            "hit_rate": 61.9
+          },
+          {
+            "ticker": "AKSO.OL",
+            "country": "NO",
+            "commodity_type": "oil_services",
+            "trade_count": 46,
+            "avg_alpha_per_trade": 3.26,
+            "hit_rate": 58.7
+          },
+          {
+            "ticker": "EQNR",
+            "country": "NO",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 40,
+            "avg_alpha_per_trade": 1.58,
+            "hit_rate": 57.5
+          },
+          {
+            "ticker": "EQNR.OL",
+            "country": "NO",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 1.528,
+            "hit_rate": 64.9
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "EQNR.OL",
+            "country": "NO",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 1.528,
+            "hit_rate": 64.9
+          },
+          {
+            "ticker": "VAR.OL",
+            "country": "NO",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 18,
+            "avg_alpha_per_trade": 1.038,
+            "hit_rate": 55.6
+          },
+          {
+            "ticker": "AKRBP.OL",
+            "country": "NO",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 0.768,
+            "hit_rate": 63.9
+          },
+          {
+            "ticker": "PKN.WA",
+            "country": "PL",
+            "commodity_type": "oil_refining",
+            "trade_count": 33,
+            "avg_alpha_per_trade": 0.126,
+            "hit_rate": 57.6
+          },
+          {
+            "ticker": "096770.KS",
+            "country": "KR",
+            "commodity_type": "oil_refining",
+            "trade_count": 28,
+            "avg_alpha_per_trade": -0.351,
+            "hit_rate": 46.4
+          }
+        ]
+      }
+    ],
+    "exchange_type": [
+      {
+        "label": "AU_Listed",
+        "benchmark_ticker": "EWA",
+        "ticker_count": 31,
+        "trade_count": 1181,
+        "annual_alpha_pct": 37.73,
+        "sharpe_ratio": 0.74,
+        "hit_rate_pct": 53.1,
+        "max_drawdown_pct": -90.36,
+        "information_ratio": 0.518,
+        "gross_annual_return_pct": 55.17,
+        "benchmark_annual_return_pct": 17.45,
+        "cost_drag_annual_pct": 8.02,
+        "volatility_annual_pct": 74.57,
+        "backtest_years": 5.31,
+        "top_performers": [
+          {
+            "ticker": "CXO.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 10.273,
+            "hit_rate": 55.6
+          },
+          {
+            "ticker": "LTR.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 41,
+            "avg_alpha_per_trade": 8.821,
+            "hit_rate": 63.4
+          },
+          {
+            "ticker": "LKE.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 32,
+            "avg_alpha_per_trade": 7.282,
+            "hit_rate": 43.8
+          },
+          {
+            "ticker": "PDN.AX",
+            "country": "AU",
+            "commodity_type": "uranium",
+            "trade_count": 41,
+            "avg_alpha_per_trade": 7.158,
+            "hit_rate": 63.4
+          },
+          {
+            "ticker": "VML.AX",
+            "country": "AU",
+            "commodity_type": "rare_earths",
+            "trade_count": 25,
+            "avg_alpha_per_trade": 6.26,
+            "hit_rate": 44.0
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "ILU.AX",
+            "country": "AU",
+            "commodity_type": "rare_earths",
+            "trade_count": 43,
+            "avg_alpha_per_trade": -0.969,
+            "hit_rate": 46.5
+          },
+          {
+            "ticker": "PEN.AX",
+            "country": "AU",
+            "commodity_type": "uranium",
+            "trade_count": 40,
+            "avg_alpha_per_trade": -1.022,
+            "hit_rate": 45.0
+          },
+          {
+            "ticker": "BPT.AX",
+            "country": "AU",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": -1.341,
+            "hit_rate": 51.4
+          },
+          {
+            "ticker": "HAS.AX",
+            "country": "AU",
+            "commodity_type": "rare_earths",
+            "trade_count": 33,
+            "avg_alpha_per_trade": -1.554,
+            "hit_rate": 33.3
+          },
+          {
+            "ticker": "CVN.AX",
+            "country": "AU",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 31,
+            "avg_alpha_per_trade": -1.788,
+            "hit_rate": 38.7
+          }
+        ]
+      },
+      {
+        "label": "CA_Listed",
+        "benchmark_ticker": "EWC",
+        "ticker_count": 35,
+        "trade_count": 1423,
+        "annual_alpha_pct": 35.64,
+        "sharpe_ratio": 0.864,
+        "hit_rate_pct": 59.2,
+        "max_drawdown_pct": -91.42,
+        "information_ratio": 0.621,
+        "gross_annual_return_pct": 49.13,
+        "benchmark_annual_return_pct": 13.49,
+        "cost_drag_annual_pct": 7.48,
+        "volatility_annual_pct": 56.84,
+        "backtest_years": 5.27,
+        "top_performers": [
+          {
+            "ticker": "JOY.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 9.982,
+            "hit_rate": 62.2
+          },
+          {
+            "ticker": "LI.V",
+            "country": "CA",
+            "commodity_type": "lithium",
+            "trade_count": 33,
+            "avg_alpha_per_trade": 8.189,
+            "hit_rate": 39.4
+          },
+          {
+            "ticker": "CJ.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 50,
+            "avg_alpha_per_trade": 6.637,
+            "hit_rate": 68.0
+          },
+          {
+            "ticker": "NVA.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 42,
+            "avg_alpha_per_trade": 6.078,
+            "hit_rate": 69.0
+          },
+          {
+            "ticker": "ATH.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 53,
+            "avg_alpha_per_trade": 5.726,
+            "hit_rate": 64.2
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "STND.V",
+            "country": "CA",
+            "commodity_type": "uranium",
+            "trade_count": 31,
+            "avg_alpha_per_trade": 0.099,
+            "hit_rate": 45.2
+          },
+          {
+            "ticker": "PPL.TO",
+            "country": "CA",
+            "commodity_type": "midstream",
+            "trade_count": 40,
+            "avg_alpha_per_trade": -0.375,
+            "hit_rate": 67.5
+          },
+          {
+            "ticker": "FSY.TO",
+            "country": "CA",
+            "commodity_type": "uranium",
+            "trade_count": 38,
+            "avg_alpha_per_trade": -1.74,
+            "hit_rate": 42.1
+          },
+          {
+            "ticker": "TORQ.V",
+            "country": "CA",
+            "commodity_type": "precious_metals",
+            "trade_count": 33,
+            "avg_alpha_per_trade": -2.109,
+            "hit_rate": 51.5
+          },
+          {
+            "ticker": "RBY.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 30,
+            "avg_alpha_per_trade": -4.093,
+            "hit_rate": 43.3
+          }
+        ]
+      },
+      {
+        "label": "Asian",
+        "benchmark_ticker": "EEM",
+        "ticker_count": 8,
+        "trade_count": 303,
+        "annual_alpha_pct": 33.91,
+        "sharpe_ratio": 1.085,
+        "hit_rate_pct": 60.4,
+        "max_drawdown_pct": -73.59,
+        "information_ratio": 0.739,
+        "gross_annual_return_pct": 49.67,
+        "benchmark_annual_return_pct": 15.77,
+        "cost_drag_annual_pct": 3.8,
+        "volatility_annual_pct": 45.77,
+        "backtest_years": 5.25,
+        "top_performers": [
+          {
+            "ticker": "028300.KS",
+            "country": "KR",
+            "commodity_type": "oil_refining",
+            "trade_count": 29,
+            "avg_alpha_per_trade": 6.866,
+            "hit_rate": 65.5
+          },
+          {
+            "ticker": "MRPL.NS",
+            "country": "IN",
+            "commodity_type": "oil_refining",
+            "trade_count": 45,
+            "avg_alpha_per_trade": 4.46,
+            "hit_rate": 60.0
+          },
+          {
+            "ticker": "267250.KS",
+            "country": "KR",
+            "commodity_type": "oil_refining",
+            "trade_count": 42,
+            "avg_alpha_per_trade": 3.887,
+            "hit_rate": 61.9
+          },
+          {
+            "ticker": "5020.T",
+            "country": "JP",
+            "commodity_type": "oil_refining",
+            "trade_count": 41,
+            "avg_alpha_per_trade": 2.2,
+            "hit_rate": 70.7
+          },
+          {
+            "ticker": "5019.T",
+            "country": "JP",
+            "commodity_type": "oil_refining",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 1.733,
+            "hit_rate": 59.5
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "5020.T",
+            "country": "JP",
+            "commodity_type": "oil_refining",
+            "trade_count": 41,
+            "avg_alpha_per_trade": 2.2,
+            "hit_rate": 70.7
+          },
+          {
+            "ticker": "5019.T",
+            "country": "JP",
+            "commodity_type": "oil_refining",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 1.733,
+            "hit_rate": 59.5
+          },
+          {
+            "ticker": "IOC.NS",
+            "country": "IN",
+            "commodity_type": "oil_refining",
+            "trade_count": 45,
+            "avg_alpha_per_trade": 1.393,
+            "hit_rate": 53.3
+          },
+          {
+            "ticker": "BPCL.NS",
+            "country": "IN",
+            "commodity_type": "oil_refining",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 1.253,
+            "hit_rate": 63.9
+          },
+          {
+            "ticker": "096770.KS",
+            "country": "KR",
+            "commodity_type": "oil_refining",
+            "trade_count": 28,
+            "avg_alpha_per_trade": -0.351,
+            "hit_rate": 46.4
+          }
+        ]
+      },
+      {
+        "label": "US_Listed",
+        "benchmark_ticker": "XLE",
+        "ticker_count": 131,
+        "trade_count": 4952,
+        "annual_alpha_pct": 32.52,
+        "sharpe_ratio": 0.822,
+        "hit_rate_pct": 58.0,
+        "max_drawdown_pct": -87.04,
+        "information_ratio": 0.562,
+        "gross_annual_return_pct": 47.69,
+        "benchmark_annual_return_pct": 15.17,
+        "cost_drag_annual_pct": 5.56,
+        "volatility_annual_pct": 57.99,
+        "backtest_years": 5.31,
+        "top_performers": [
+          {
+            "ticker": "SGML",
+            "country": "CA",
+            "commodity_type": "lithium",
+            "trade_count": 40,
+            "avg_alpha_per_trade": 9.194,
+            "hit_rate": 70.0
+          },
+          {
+            "ticker": "SM",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 9.101,
+            "hit_rate": 56.8
+          },
+          {
+            "ticker": "PR",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 49,
+            "avg_alpha_per_trade": 7.988,
+            "hit_rate": 69.4
+          },
+          {
+            "ticker": "LAC",
+            "country": "CA",
+            "commodity_type": "lithium",
+            "trade_count": 12,
+            "avg_alpha_per_trade": 7.827,
+            "hit_rate": 41.7
+          },
+          {
+            "ticker": "VNCE",
+            "country": "US",
+            "commodity_type": "rare_earths",
+            "trade_count": 38,
+            "avg_alpha_per_trade": 7.725,
+            "hit_rate": 42.1
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "GLO",
+            "country": "CA",
+            "commodity_type": "uranium",
+            "trade_count": 29,
+            "avg_alpha_per_trade": -1.583,
+            "hit_rate": 48.3
+          },
+          {
+            "ticker": "VTS",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 16,
+            "avg_alpha_per_trade": -2.081,
+            "hit_rate": 50.0
+          },
+          {
+            "ticker": "CAPL",
+            "country": "US",
+            "commodity_type": "oil_refining",
+            "trade_count": 29,
+            "avg_alpha_per_trade": -2.137,
+            "hit_rate": 51.7
+          },
+          {
+            "ticker": "IONR",
+            "country": "US",
+            "commodity_type": "lithium",
+            "trade_count": 13,
+            "avg_alpha_per_trade": -2.285,
+            "hit_rate": 46.2
+          },
+          {
+            "ticker": "BATL",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 34,
+            "avg_alpha_per_trade": -2.693,
+            "hit_rate": 38.2
+          }
+        ]
+      },
+      {
+        "label": "European",
+        "benchmark_ticker": "VGK",
+        "ticker_count": 19,
+        "trade_count": 635,
+        "annual_alpha_pct": 25.45,
+        "sharpe_ratio": 0.891,
+        "hit_rate_pct": 57.6,
+        "max_drawdown_pct": -66.35,
+        "information_ratio": 0.552,
+        "gross_annual_return_pct": 39.77,
+        "benchmark_annual_return_pct": 14.31,
+        "cost_drag_annual_pct": 3.67,
+        "volatility_annual_pct": 44.63,
+        "backtest_years": 5.31,
+        "top_performers": [
+          {
+            "ticker": "FRES.L",
+            "country": "UK",
+            "commodity_type": "precious_metals",
+            "trade_count": 26,
+            "avg_alpha_per_trade": 5.205,
+            "hit_rate": 69.2
+          },
+          {
+            "ticker": "REP.MC",
+            "country": "ES",
+            "commodity_type": "oil_refining",
+            "trade_count": 30,
+            "avg_alpha_per_trade": 4.412,
+            "hit_rate": 70.0
+          },
+          {
+            "ticker": "HOC.L",
+            "country": "UK",
+            "commodity_type": "precious_metals",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 4.387,
+            "hit_rate": 63.9
+          },
+          {
+            "ticker": "PTAL.L",
+            "country": "UK",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 3.862,
+            "hit_rate": 52.8
+          },
+          {
+            "ticker": "ITM.L",
+            "country": "UK",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 25,
+            "avg_alpha_per_trade": 3.384,
+            "hit_rate": 40.0
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "AKRBP.OL",
+            "country": "NO",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 0.768,
+            "hit_rate": 63.9
+          },
+          {
+            "ticker": "GALP.LS",
+            "country": "PT",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 0.418,
+            "hit_rate": 56.8
+          },
+          {
+            "ticker": "CAPD.L",
+            "country": "UK",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 38,
+            "avg_alpha_per_trade": 0.367,
+            "hit_rate": 57.9
+          },
+          {
+            "ticker": "PKN.WA",
+            "country": "PL",
+            "commodity_type": "oil_refining",
+            "trade_count": 33,
+            "avg_alpha_per_trade": 0.126,
+            "hit_rate": 57.6
+          },
+          {
+            "ticker": "TLW.L",
+            "country": "UK",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 35,
+            "avg_alpha_per_trade": -0.688,
+            "hit_rate": 45.7
+          }
+        ]
+      },
+      {
+        "label": "EM_Listed",
+        "benchmark_ticker": "EEM",
+        "ticker_count": 3,
+        "trade_count": 110,
+        "annual_alpha_pct": 24.31,
+        "sharpe_ratio": 0.789,
+        "hit_rate_pct": 53.6,
+        "max_drawdown_pct": -41.45,
+        "information_ratio": 0.549,
+        "gross_annual_return_pct": 33.98,
+        "benchmark_annual_return_pct": 9.67,
+        "cost_drag_annual_pct": 3.67,
+        "volatility_annual_pct": 43.06,
+        "backtest_years": 5.15,
+        "top_performers": [
+          {
+            "ticker": "RECV3.SA",
+            "country": "BR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 21,
+            "avg_alpha_per_trade": 3.898,
+            "hit_rate": 61.9
+          },
+          {
+            "ticker": "PRIO3.SA",
+            "country": "BR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 45,
+            "avg_alpha_per_trade": 2.53,
+            "hit_rate": 53.3
+          },
+          {
+            "ticker": "PETR4.SA",
+            "country": "BR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 44,
+            "avg_alpha_per_trade": 0.376,
+            "hit_rate": 50.0
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "RECV3.SA",
+            "country": "BR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 21,
+            "avg_alpha_per_trade": 3.898,
+            "hit_rate": 61.9
+          },
+          {
+            "ticker": "PRIO3.SA",
+            "country": "BR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 45,
+            "avg_alpha_per_trade": 2.53,
+            "hit_rate": 53.3
+          },
+          {
+            "ticker": "PETR4.SA",
+            "country": "BR",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 44,
+            "avg_alpha_per_trade": 0.376,
+            "hit_rate": 50.0
+          }
+        ]
+      }
+    ],
+    "commodity_type": [
+      {
+        "label": "lithium",
+        "benchmark_ticker": "LIT",
+        "ticker_count": 17,
+        "trade_count": 559,
+        "annual_alpha_pct": 55.78,
+        "sharpe_ratio": 0.982,
+        "hit_rate_pct": 55.3,
+        "max_drawdown_pct": -90.36,
+        "information_ratio": 0.692,
+        "gross_annual_return_pct": 88.52,
+        "benchmark_annual_return_pct": 32.74,
+        "cost_drag_annual_pct": 8.17,
+        "volatility_annual_pct": 90.13,
+        "backtest_years": 5.31,
+        "top_performers": [
+          {
+            "ticker": "SGML",
+            "country": "CA",
+            "commodity_type": "lithium",
+            "trade_count": 40,
+            "avg_alpha_per_trade": 8.635,
+            "hit_rate": 70.0
+          },
+          {
+            "ticker": "CXO.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 36,
+            "avg_alpha_per_trade": 8.305,
+            "hit_rate": 55.6
+          },
+          {
+            "ticker": "LTR.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 41,
+            "avg_alpha_per_trade": 7.378,
+            "hit_rate": 63.4
+          },
+          {
+            "ticker": "LKE.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 32,
+            "avg_alpha_per_trade": 6.489,
+            "hit_rate": 43.8
+          },
+          {
+            "ticker": "LI.V",
+            "country": "CA",
+            "commodity_type": "lithium",
+            "trade_count": 33,
+            "avg_alpha_per_trade": 6.33,
+            "hit_rate": 39.4
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "SQM",
+            "country": "CL",
+            "commodity_type": "lithium",
+            "trade_count": 33,
+            "avg_alpha_per_trade": 1.928,
+            "hit_rate": 60.6
+          },
+          {
+            "ticker": "IGO.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 39,
+            "avg_alpha_per_trade": 1.779,
+            "hit_rate": 59.0
+          },
+          {
+            "ticker": "ALB",
+            "country": "US",
+            "commodity_type": "lithium",
+            "trade_count": 28,
+            "avg_alpha_per_trade": 1.741,
+            "hit_rate": 46.4
+          },
+          {
+            "ticker": "MIN.AX",
+            "country": "AU",
+            "commodity_type": "lithium",
+            "trade_count": 39,
+            "avg_alpha_per_trade": -0.087,
+            "hit_rate": 51.3
+          },
+          {
+            "ticker": "IONR",
+            "country": "US",
+            "commodity_type": "lithium",
+            "trade_count": 13,
+            "avg_alpha_per_trade": -2.692,
+            "hit_rate": 46.2
+          }
+        ]
+      },
+      {
+        "label": "oil_refining",
+        "benchmark_ticker": "CRAK",
+        "ticker_count": 20,
+        "trade_count": 772,
+        "annual_alpha_pct": 23.54,
+        "sharpe_ratio": 0.97,
+        "hit_rate_pct": 61.1,
+        "max_drawdown_pct": -73.59,
+        "information_ratio": 0.576,
+        "gross_annual_return_pct": 44.28,
+        "benchmark_annual_return_pct": 20.74,
+        "cost_drag_annual_pct": 4.64,
+        "volatility_annual_pct": 45.65,
+        "backtest_years": 5.32,
+        "top_performers": [
+          {
+            "ticker": "028300.KS",
+            "country": "KR",
+            "commodity_type": "oil_refining",
+            "trade_count": 29,
+            "avg_alpha_per_trade": 5.43,
+            "hit_rate": 65.5
+          },
+          {
+            "ticker": "PBF",
+            "country": "US",
+            "commodity_type": "oil_refining",
+            "trade_count": 43,
+            "avg_alpha_per_trade": 4.435,
+            "hit_rate": 60.5
+          },
+          {
+            "ticker": "CLMT",
+            "country": "US",
+            "commodity_type": "oil_refining",
+            "trade_count": 45,
+            "avg_alpha_per_trade": 4.389,
+            "hit_rate": 62.2
+          },
+          {
+            "ticker": "MRPL.NS",
+            "country": "IN",
+            "commodity_type": "oil_refining",
+            "trade_count": 45,
+            "avg_alpha_per_trade": 4.11,
+            "hit_rate": 60.0
+          },
+          {
+            "ticker": "PARR",
+            "country": "US",
+            "commodity_type": "oil_refining",
+            "trade_count": 47,
+            "avg_alpha_per_trade": 3.475,
+            "hit_rate": 61.7
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "DK",
+            "country": "US",
+            "commodity_type": "oil_refining",
+            "trade_count": 39,
+            "avg_alpha_per_trade": 0.753,
+            "hit_rate": 56.4
+          },
+          {
+            "ticker": "PKN.WA",
+            "country": "PL",
+            "commodity_type": "oil_refining",
+            "trade_count": 33,
+            "avg_alpha_per_trade": 0.234,
+            "hit_rate": 57.6
+          },
+          {
+            "ticker": "CVI",
+            "country": "US",
+            "commodity_type": "oil_refining",
+            "trade_count": 34,
+            "avg_alpha_per_trade": -0.115,
+            "hit_rate": 58.8
+          },
+          {
+            "ticker": "096770.KS",
+            "country": "KR",
+            "commodity_type": "oil_refining",
+            "trade_count": 28,
+            "avg_alpha_per_trade": -1.153,
+            "hit_rate": 46.4
+          },
+          {
+            "ticker": "CAPL",
+            "country": "US",
+            "commodity_type": "oil_refining",
+            "trade_count": 29,
+            "avg_alpha_per_trade": -1.971,
+            "hit_rate": 51.7
+          }
+        ]
+      },
+      {
+        "label": "oil_services",
+        "benchmark_ticker": "OIH",
+        "ticker_count": 15,
+        "trade_count": 562,
+        "annual_alpha_pct": 19.09,
+        "sharpe_ratio": 0.916,
+        "hit_rate_pct": 59.1,
+        "max_drawdown_pct": -78.53,
+        "information_ratio": 0.417,
+        "gross_annual_return_pct": 56.0,
+        "benchmark_annual_return_pct": 36.91,
+        "cost_drag_annual_pct": 6.26,
+        "volatility_annual_pct": 61.16,
+        "backtest_years": 5.3,
+        "top_performers": [
+          {
+            "ticker": "TUSK",
+            "country": "US",
+            "commodity_type": "oil_services",
+            "trade_count": 35,
+            "avg_alpha_per_trade": 5.354,
+            "hit_rate": 54.3
+          },
+          {
+            "ticker": "WFRD",
+            "country": "US",
+            "commodity_type": "oil_services",
+            "trade_count": 38,
+            "avg_alpha_per_trade": 4.702,
+            "hit_rate": 68.4
+          },
+          {
+            "ticker": "RIG",
+            "country": "US",
+            "commodity_type": "oil_services",
+            "trade_count": 38,
+            "avg_alpha_per_trade": 3.345,
+            "hit_rate": 57.9
+          },
+          {
+            "ticker": "FTI",
+            "country": "US",
+            "commodity_type": "oil_services",
+            "trade_count": 48,
+            "avg_alpha_per_trade": 2.963,
+            "hit_rate": 70.8
+          },
+          {
+            "ticker": "VAL",
+            "country": "US",
+            "commodity_type": "oil_services",
+            "trade_count": 29,
+            "avg_alpha_per_trade": 2.491,
+            "hit_rate": 69.0
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "AKSO.OL",
+            "country": "NO",
+            "commodity_type": "oil_services",
+            "trade_count": 46,
+            "avg_alpha_per_trade": 0.246,
+            "hit_rate": 58.7
+          },
+          {
+            "ticker": "HAL",
+            "country": "US",
+            "commodity_type": "oil_services",
+            "trade_count": 36,
+            "avg_alpha_per_trade": -0.064,
+            "hit_rate": 63.9
+          },
+          {
+            "ticker": "NE",
+            "country": "US",
+            "commodity_type": "oil_services",
+            "trade_count": 28,
+            "avg_alpha_per_trade": -0.21,
+            "hit_rate": 50.0
+          },
+          {
+            "ticker": "WTTR",
+            "country": "US",
+            "commodity_type": "oil_services",
+            "trade_count": 47,
+            "avg_alpha_per_trade": -0.414,
+            "hit_rate": 51.1
+          },
+          {
+            "ticker": "NOV",
+            "country": "US",
+            "commodity_type": "oil_services",
+            "trade_count": 35,
+            "avg_alpha_per_trade": -0.905,
+            "hit_rate": 60.0
+          }
+        ]
+      },
+      {
+        "label": "uranium",
+        "benchmark_ticker": "URA",
+        "ticker_count": 18,
+        "trade_count": 747,
+        "annual_alpha_pct": 18.1,
+        "sharpe_ratio": 0.764,
+        "hit_rate_pct": 55.0,
+        "max_drawdown_pct": -91.49,
+        "information_ratio": 0.353,
+        "gross_annual_return_pct": 53.66,
+        "benchmark_annual_return_pct": 35.56,
+        "cost_drag_annual_pct": 8.63,
+        "volatility_annual_pct": 70.26,
+        "backtest_years": 5.31,
+        "top_performers": [
+          {
+            "ticker": "PDN.AX",
+            "country": "AU",
+            "commodity_type": "uranium",
+            "trade_count": 41,
+            "avg_alpha_per_trade": 5.434,
+            "hit_rate": 63.4
+          },
+          {
+            "ticker": "UEC",
+            "country": "US",
+            "commodity_type": "uranium",
+            "trade_count": 43,
+            "avg_alpha_per_trade": 4.725,
+            "hit_rate": 62.8
+          },
+          {
+            "ticker": "AGE.AX",
+            "country": "AU",
+            "commodity_type": "uranium",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 4.117,
+            "hit_rate": 40.5
+          },
+          {
+            "ticker": "UUUU",
+            "country": "US",
+            "commodity_type": "uranium",
+            "trade_count": 43,
+            "avg_alpha_per_trade": 3.183,
+            "hit_rate": 62.8
+          },
+          {
+            "ticker": "BOE.AX",
+            "country": "AU",
+            "commodity_type": "uranium",
+            "trade_count": 45,
+            "avg_alpha_per_trade": 2.822,
+            "hit_rate": 53.3
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "LOT.AX",
+            "country": "AU",
+            "commodity_type": "uranium",
+            "trade_count": 38,
+            "avg_alpha_per_trade": -0.136,
+            "hit_rate": 47.4
+          },
+          {
+            "ticker": "PEN.AX",
+            "country": "AU",
+            "commodity_type": "uranium",
+            "trade_count": 40,
+            "avg_alpha_per_trade": -2.286,
+            "hit_rate": 45.0
+          },
+          {
+            "ticker": "STND.V",
+            "country": "CA",
+            "commodity_type": "uranium",
+            "trade_count": 31,
+            "avg_alpha_per_trade": -2.601,
+            "hit_rate": 45.2
+          },
+          {
+            "ticker": "FSY.TO",
+            "country": "CA",
+            "commodity_type": "uranium",
+            "trade_count": 38,
+            "avg_alpha_per_trade": -3.066,
+            "hit_rate": 42.1
+          },
+          {
+            "ticker": "GLO",
+            "country": "CA",
+            "commodity_type": "uranium",
+            "trade_count": 29,
+            "avg_alpha_per_trade": -3.911,
+            "hit_rate": 48.3
+          }
+        ]
+      },
+      {
+        "label": "precious_metals",
+        "benchmark_ticker": "GDX",
+        "ticker_count": 36,
+        "trade_count": 1420,
+        "annual_alpha_pct": 17.02,
+        "sharpe_ratio": 0.957,
+        "hit_rate_pct": 57.0,
+        "max_drawdown_pct": -72.19,
+        "information_ratio": 0.458,
+        "gross_annual_return_pct": 48.63,
+        "benchmark_annual_return_pct": 31.6,
+        "cost_drag_annual_pct": 4.62,
+        "volatility_annual_pct": 50.79,
+        "backtest_years": 5.31,
+        "top_performers": [
+          {
+            "ticker": "TRX",
+            "country": "US",
+            "commodity_type": "precious_metals",
+            "trade_count": 31,
+            "avg_alpha_per_trade": 4.773,
+            "hit_rate": 48.4
+          },
+          {
+            "ticker": "IAG",
+            "country": "CA",
+            "commodity_type": "precious_metals",
+            "trade_count": 49,
+            "avg_alpha_per_trade": 3.831,
+            "hit_rate": 63.3
+          },
+          {
+            "ticker": "CDE",
+            "country": "US",
+            "commodity_type": "precious_metals",
+            "trade_count": 40,
+            "avg_alpha_per_trade": 3.675,
+            "hit_rate": 57.5
+          },
+          {
+            "ticker": "GOLD",
+            "country": "CA",
+            "commodity_type": "precious_metals",
+            "trade_count": 32,
+            "avg_alpha_per_trade": 3.486,
+            "hit_rate": 50.0
+          },
+          {
+            "ticker": "AG",
+            "country": "CA",
+            "commodity_type": "precious_metals",
+            "trade_count": 42,
+            "avg_alpha_per_trade": 3.48,
+            "hit_rate": 59.5
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "NEM",
+            "country": "US",
+            "commodity_type": "precious_metals",
+            "trade_count": 39,
+            "avg_alpha_per_trade": -0.366,
+            "hit_rate": 53.8
+          },
+          {
+            "ticker": "EQX",
+            "country": "CA",
+            "commodity_type": "precious_metals",
+            "trade_count": 43,
+            "avg_alpha_per_trade": -0.492,
+            "hit_rate": 55.8
+          },
+          {
+            "ticker": "BTG",
+            "country": "CA",
+            "commodity_type": "precious_metals",
+            "trade_count": 37,
+            "avg_alpha_per_trade": -0.664,
+            "hit_rate": 56.8
+          },
+          {
+            "ticker": "CG.TO",
+            "country": "CA",
+            "commodity_type": "precious_metals",
+            "trade_count": 36,
+            "avg_alpha_per_trade": -0.723,
+            "hit_rate": 50.0
+          },
+          {
+            "ticker": "TORQ.V",
+            "country": "CA",
+            "commodity_type": "precious_metals",
+            "trade_count": 33,
+            "avg_alpha_per_trade": -4.05,
+            "hit_rate": 51.5
+          }
+        ]
+      },
+      {
+        "label": "rare_earths",
+        "benchmark_ticker": "REMX",
+        "ticker_count": 16,
+        "trade_count": 538,
+        "annual_alpha_pct": 13.6,
+        "sharpe_ratio": 0.583,
+        "hit_rate_pct": 49.8,
+        "max_drawdown_pct": -86.24,
+        "information_ratio": 0.148,
+        "gross_annual_return_pct": 54.25,
+        "benchmark_annual_return_pct": 40.65,
+        "cost_drag_annual_pct": 11.1,
+        "volatility_annual_pct": 93.06,
+        "backtest_years": 5.31,
+        "top_performers": [
+          {
+            "ticker": "REE",
+            "country": "US",
+            "commodity_type": "rare_earths",
+            "trade_count": 13,
+            "avg_alpha_per_trade": 5.9,
+            "hit_rate": 30.8
+          },
+          {
+            "ticker": "VNCE",
+            "country": "US",
+            "commodity_type": "rare_earths",
+            "trade_count": 38,
+            "avg_alpha_per_trade": 5.19,
+            "hit_rate": 42.1
+          },
+          {
+            "ticker": "MP",
+            "country": "US",
+            "commodity_type": "rare_earths",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 3.546,
+            "hit_rate": 56.8
+          },
+          {
+            "ticker": "VML.AX",
+            "country": "AU",
+            "commodity_type": "rare_earths",
+            "trade_count": 25,
+            "avg_alpha_per_trade": 3.448,
+            "hit_rate": 44.0
+          },
+          {
+            "ticker": "REEMF",
+            "country": "CA",
+            "commodity_type": "rare_earths",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 2.97,
+            "hit_rate": 48.6
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "ARR.AX",
+            "country": "AU",
+            "commodity_type": "rare_earths",
+            "trade_count": 39,
+            "avg_alpha_per_trade": -0.593,
+            "hit_rate": 38.5
+          },
+          {
+            "ticker": "NB",
+            "country": "CA",
+            "commodity_type": "rare_earths",
+            "trade_count": 13,
+            "avg_alpha_per_trade": -1.613,
+            "hit_rate": 53.8
+          },
+          {
+            "ticker": "RIO.AX",
+            "country": "AU",
+            "commodity_type": "rare_earths",
+            "trade_count": 41,
+            "avg_alpha_per_trade": -1.892,
+            "hit_rate": 61.0
+          },
+          {
+            "ticker": "ILU.AX",
+            "country": "AU",
+            "commodity_type": "rare_earths",
+            "trade_count": 43,
+            "avg_alpha_per_trade": -2.204,
+            "hit_rate": 46.5
+          },
+          {
+            "ticker": "HAS.AX",
+            "country": "AU",
+            "commodity_type": "rare_earths",
+            "trade_count": 33,
+            "avg_alpha_per_trade": -5.395,
+            "hit_rate": 33.3
+          }
+        ]
+      },
+      {
+        "label": "oil_gas_upstream",
+        "benchmark_ticker": "XOP",
+        "ticker_count": 87,
+        "trade_count": 3255,
+        "annual_alpha_pct": 11.67,
+        "sharpe_ratio": 0.82,
+        "hit_rate_pct": 57.7,
+        "max_drawdown_pct": -87.04,
+        "information_ratio": 0.256,
+        "gross_annual_return_pct": 43.35,
+        "benchmark_annual_return_pct": 31.68,
+        "cost_drag_annual_pct": 5.53,
+        "volatility_annual_pct": 52.84,
+        "backtest_years": 5.31,
+        "top_performers": [
+          {
+            "ticker": "JOY.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 7.985,
+            "hit_rate": 62.2
+          },
+          {
+            "ticker": "SM",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": 7.422,
+            "hit_rate": 56.8
+          },
+          {
+            "ticker": "PR",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 49,
+            "avg_alpha_per_trade": 6.643,
+            "hit_rate": 69.4
+          },
+          {
+            "ticker": "CJ.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 50,
+            "avg_alpha_per_trade": 5.283,
+            "hit_rate": 68.0
+          },
+          {
+            "ticker": "ATH.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 53,
+            "avg_alpha_per_trade": 4.854,
+            "hit_rate": 64.2
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "BATL",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 34,
+            "avg_alpha_per_trade": -3.604,
+            "hit_rate": 38.2
+          },
+          {
+            "ticker": "STX.AX",
+            "country": "AU",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 37,
+            "avg_alpha_per_trade": -3.626,
+            "hit_rate": 56.8
+          },
+          {
+            "ticker": "RBY.TO",
+            "country": "CA",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 30,
+            "avg_alpha_per_trade": -3.781,
+            "hit_rate": 43.3
+          },
+          {
+            "ticker": "GRNT",
+            "country": "US",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 25,
+            "avg_alpha_per_trade": -3.822,
+            "hit_rate": 48.0
+          },
+          {
+            "ticker": "CVN.AX",
+            "country": "AU",
+            "commodity_type": "oil_gas_upstream",
+            "trade_count": 31,
+            "avg_alpha_per_trade": -4.891,
+            "hit_rate": 38.7
+          }
+        ]
+      },
+      {
+        "label": "midstream",
+        "benchmark_ticker": "AMLP",
+        "ticker_count": 18,
+        "trade_count": 751,
+        "annual_alpha_pct": 10.84,
+        "sharpe_ratio": 1.086,
+        "hit_rate_pct": 62.6,
+        "max_drawdown_pct": -34.89,
+        "information_ratio": 0.539,
+        "gross_annual_return_pct": 27.58,
+        "benchmark_annual_return_pct": 16.74,
+        "cost_drag_annual_pct": 3.84,
+        "volatility_annual_pct": 25.38,
+        "backtest_years": 5.31,
+        "top_performers": [
+          {
+            "ticker": "TRGP",
+            "country": "US",
+            "commodity_type": "midstream",
+            "trade_count": 49,
+            "avg_alpha_per_trade": 2.577,
+            "hit_rate": 65.3
+          },
+          {
+            "ticker": "GEL",
+            "country": "US",
+            "commodity_type": "midstream",
+            "trade_count": 43,
+            "avg_alpha_per_trade": 1.692,
+            "hit_rate": 58.1
+          },
+          {
+            "ticker": "OKE",
+            "country": "US",
+            "commodity_type": "midstream",
+            "trade_count": 47,
+            "avg_alpha_per_trade": 1.638,
+            "hit_rate": 72.3
+          },
+          {
+            "ticker": "KEY.TO",
+            "country": "CA",
+            "commodity_type": "midstream",
+            "trade_count": 38,
+            "avg_alpha_per_trade": 1.198,
+            "hit_rate": 71.1
+          },
+          {
+            "ticker": "DTM",
+            "country": "US",
+            "commodity_type": "midstream",
+            "trade_count": 34,
+            "avg_alpha_per_trade": 1.035,
+            "hit_rate": 58.8
+          }
+        ],
+        "worst_performers": [
+          {
+            "ticker": "AM",
+            "country": "US",
+            "commodity_type": "midstream",
+            "trade_count": 43,
+            "avg_alpha_per_trade": 0.575,
+            "hit_rate": 55.8
+          },
+          {
+            "ticker": "TRP",
+            "country": "CA",
+            "commodity_type": "midstream",
+            "trade_count": 38,
+            "avg_alpha_per_trade": 0.489,
+            "hit_rate": 60.5
+          },
+          {
+            "ticker": "ET",
+            "country": "US",
+            "commodity_type": "midstream",
+            "trade_count": 39,
+            "avg_alpha_per_trade": 0.381,
+            "hit_rate": 64.1
+          },
+          {
+            "ticker": "PPL.TO",
+            "country": "CA",
+            "commodity_type": "midstream",
+            "trade_count": 40,
+            "avg_alpha_per_trade": 0.065,
+            "hit_rate": 67.5
+          },
+          {
+            "ticker": "ENB",
+            "country": "CA",
+            "commodity_type": "midstream",
+            "trade_count": 32,
+            "avg_alpha_per_trade": -1.346,
+            "hit_rate": 50.0
+          }
+        ]
+      }
+    ]
+  }
+}
