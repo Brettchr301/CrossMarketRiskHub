@@ -412,3 +412,34 @@ def trigger_alpha_training(
 
     threading.Thread(target=_run, daemon=True).start()
     return {"status": "alpha training triggered", "train_cycles": str(train_cycles), "test_cycle": str(test_cycle)}
+
+
+# --- Signal monitoring endpoints ---
+
+_signal_monitor = None
+
+def _get_monitor():
+    global _signal_monitor
+    if _signal_monitor is None:
+        from app.election.signals.monitor import SignalMonitor
+        from app.election.config import ElectionSettings
+        settings = ElectionSettings()
+        _signal_monitor = SignalMonitor(
+            db_path=settings.election_db_path,
+            alert_webhook=settings.discord_webhook_url,
+        )
+    return _signal_monitor
+
+
+@router.get("/signal-status")
+def get_signal_status() -> dict:
+    """Current narrative bias signal status."""
+    return _get_monitor().get_status()
+
+
+@router.get("/analog-forecast")
+def get_analog_forecast() -> list[dict]:
+    """Analog-based mispricing forecast for 2026 races."""
+    from app.election.signals.analog_matcher import match_2026_to_analogs, get_mispricing_forecast
+    matches = match_2026_to_analogs()
+    return get_mispricing_forecast(matches)
