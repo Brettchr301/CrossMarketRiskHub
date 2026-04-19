@@ -1,0 +1,43 @@
+{
+  "version": "5.0.0",
+  "budget": {
+    "deepseek": {
+      "cap": 20,
+      "spent": 0
+    },
+    "gemini": {
+      "cap": 10,
+      "spent": 0
+    }
+  },
+  "history": {
+    "score_5": {
+      "attempts": 1,
+      "successes": 1,
+      "avg_pass_rate": 0.0,
+      "last_model": "deepseek-reasoner",
+      "last_timestamp": "2026-04-19T15:39:18Z"
+    },
+    "score_7": {
+      "attempts": 1,
+      "successes": 1,
+      "avg_pass_rate": 0.0,
+      "last_model": "deepseek-reasoner",
+      "last_timestamp": "2026-04-19T15:40:51Z"
+    },
+    "score_9": {
+      "attempts": 1,
+      "successes": 1,
+      "avg_pass_rate": 0.0,
+      "last_model": "deepseek-reasoner",
+      "last_timestamp": "2026-04-19T15:51:26Z"
+    },
+    "score_8": {
+      "attempts": 1,
+      "successes": 1,
+      "avg_pass_rate": 0.0,
+      "last_model": "deepseek-reasoner",
+      "last_timestamp": "2026-04-19T15:51:49Z"
+    }
+  }
+}

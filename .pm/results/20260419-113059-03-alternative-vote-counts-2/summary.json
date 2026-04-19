@@ -1,0 +1,14 @@
+{
+  "version": "5.0.0",
+  "timestamp": "2026-04-19T15:39:18Z",
+  "score": 5,
+  "result": {
+    "rounds": 1,
+    "tests_passed": 0,
+    "tests_total": 0,
+    "mutation_score": 0,
+    "cost": 0.176083,
+    "coherence_brief": ".pm\\results\\20260419-113059-03-alternative-vote-counts-2\\coherence-brief.md",
+    "review_log": ".pm\\results\\20260419-113059-03-alternative-vote-counts-2\\review-log.md"
+  }
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Alpha Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+    <style>
+        :root { --bg: #1a1a2e; --card: #16213e; --text: #e0e0e0; --accent: #0f3460; --green: #4ecca3; --red: #e74c3c; --blue: #3498db; --yellow: #f39c12; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; padding: 20px; }
+        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--accent); }
+        header h1 { font-size: 1.6em; font-weight: 600; }
+        #last-refresh { font-size: 0.85em; opacity: 0.6; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; }
+        .card { background: var(--card); border-radius: 12px; padding: 20px; min-height: 300px; }
+        .card h2 { font-size: 1.1em; margin-bottom: 16px; color: var(--green); }
+        select { background: var(--accent); color: var(--text); border: 1px solid #333; border-radius: 6px; padding: 6px 12px; margin-bottom: 12px; font-size: 0.9em; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+        th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        th { color: var(--green); cursor: pointer; user-select: none; }
+        th:hover { text-decoration: underline; }
+        .positive { color: var(--green); }
+        .negative { color: var(--red); }
+        .stat-row { display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+        .stat { background: var(--accent); padding: 12px 16px; border-radius: 8px; text-align: center; min-width: 120px; }
+        .stat .value { font-size: 1.4em; font-weight: bold; color: var(--green); }
+        .stat .label { font-size: 0.75em; opacity: 0.6; margin-top: 4px; }
+        canvas { max-height: 280px; }
+        @media (max-width: 500px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Election Alpha Dashboard</h1>
+        <span id="last-refresh">Loading...</span>
+    </header>
+
+    <div class="stat-row" id="summary-stats"></div>
+
+    <div class="grid">
+        <div class="card" id="price-panel">
+            <h2>Price History</h2>
+            <select id="race-selector"><option>Loading races...</option></select>
+            <canvas id="price-chart"></canvas>
+        </div>
+        <div class="card" id="alpha-panel">
+            <h2>Alpha Signals</h2>
+            <canvas id="alpha-chart"></canvas>
+        </div>
+        <div class="card" id="arb-panel">
+            <h2>Top Arbitrage Opportunities</h2>
+            <table id="arb-table">
+                <thead><tr><th>Type</th><th>Description</th><th>Net Edge %</th><th>Confidence</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="card" id="races-panel">
+            <h2>Race Summary</h2>
+            <table id="race-table">
+                <thead><tr><th onclick="sortTable(0)">State</th><th onclick="sortTable(1)">Type</th><th onclick="sortTable(2)">Cycle</th><th onclick="sortTable(3)">Prob</th><th onclick="sortTable(4)">Platforms</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+    const API = '/v1/election';
+    let priceChart = null, alphaChart = null;
+    const COLORS = ['#4ecca3','#3498db','#e74c3c','#f39c12','#9b59b6','#1abc9c','#e67e22','#2ecc71'];
+
+    async function fetchJSON(path) {
+        try { const r = await fetch(API + path); return r.ok ? await r.json() : null; }
+        catch(e) { console.warn('Fetch failed:', path, e); return null; }
+    }
+
+    async function loadDashboard() {
+        const dashboard = await fetchJSON('/dashboard');
+        if (dashboard) {
+            const s = dashboard.summary;
+            const el = document.getElementById('summary-stats');
+            el.innerHTML = '';
+            [['Races', s.races_tracked], ['Contracts', s.contracts_tracked], ['Quotes', s.total_quotes], ['Active Arbs', s.active_arbs]]
+                .forEach(([label, value]) => {
+                    const div = document.createElement('div');
+                    div.className = 'stat';
+                    const vDiv = document.createElement('div');
+                    vDiv.className = 'value';
+                    vDiv.textContent = (value || 0).toLocaleString();
+                    const lDiv = document.createElement('div');
+                    lDiv.className = 'label';
+                    lDiv.textContent = label;
+                    div.appendChild(vDiv);
+                    div.appendChild(lDiv);
+                    el.appendChild(div);
+                });
+
+            // Arb table
+            const arbBody = document.querySelector('#arb-table tbody');
+            arbBody.innerHTML = '';
+            (dashboard.top_arbs || []).forEach(a => {
+                const tr = document.createElement('tr');
+                const vals = [a.arb_type, a.description, a.net_edge_pct?.toFixed(2) + '%', a.confidence?.toFixed(2)];
+                vals.forEach((v, i) => {
+                    const td = document.createElement('td');
+                    td.textContent = v || '';
+                    if (i === 2) td.className = 'positive';
+                    tr.appendChild(td);
+                });
+                arbBody.appendChild(tr);
+            });
+
+            // Alpha signals
+            const signals = dashboard.alpha_signals || [];
+            if (signals.length && alphaChart) {
+                alphaChart.data.labels = signals.map(s => 'Race ' + s.race_id);
+                alphaChart.data.datasets[0].data = signals.map(s => s.predicted_prob_change * 100);
+                alphaChart.data.datasets[0].backgroundColor = signals.map(s => s.predicted_prob_change >= 0 ? '#4ecca3' : '#e74c3c');
+                alphaChart.update();
+            }
+        }
+
+        // Races
+        const races = await fetchJSON('/races');
+        if (races) {
+            const sel = document.getElementById('race-selector');
+            sel.innerHTML = '';
+            races.forEach(r => {
+                const opt = document.createElement('option');
+                opt.value = r.id;
+                opt.textContent = `${r.state} ${r.race_type} ${r.cycle}`;
+                sel.appendChild(opt);
+            });
+            sel.onchange = () => loadPriceChart(sel.value);
+
+            const rBody = document.querySelector('#race-table tbody');
+            rBody.innerHTML = '';
+            races.forEach(r => {
+                const tr = document.createElement('tr');
+                [r.state, r.race_type, r.cycle, r.latest_prob?.toFixed(3) || '-', r.n_platforms].forEach(v => {
+                    const td = document.createElement('td');
+                    td.textContent = v;
+                    tr.appendChild(td);
+                });
+                rBody.appendChild(tr);
+            });
+
+            if (races.length) loadPriceChart(races[0].id);
+        }
+
+        document.getElementById('last-refresh').textContent = 'Last refresh: ' + new Date().toLocaleTimeString();
+    }
+
+    async function loadPriceChart(raceId) {
+        const data = await fetchJSON('/quotes/' + raceId);
+        if (!data || !data.length) return;
+
+        const platforms = [...new Set(data.map(d => d.platform))];
+        const datasets = platforms.map((p, i) => ({
+            label: p,
+            data: data.filter(d => d.platform === p).map(d => ({ x: d.as_of, y: d.last_price })),
+            borderColor: COLORS[i % COLORS.length],
+            tension: 0.3,
+            pointRadius: 2,
+        }));
+
+        if (priceChart) priceChart.destroy();
+        priceChart = new Chart(document.getElementById('price-chart'), {
+            type: 'line',
+            data: { datasets },
+            options: {
+                responsive: true,
+                plugins: { legend: { labels: { color: '#e0e0e0' } } },
+                scales: {
+                    x: { type: 'category', ticks: { color: '#888', maxTicksLimit: 8 } },
+                    y: { min: 0, max: 1, ticks: { color: '#888' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+                },
+            },
+        });
+    }
+
+    let sortDir = 1;
+    function sortTable(col) {
+        const tbody = document.querySelector('#race-table tbody');
+        const rows = Array.from(tbody.rows);
+        rows.sort((a, b) => {
+            const va = a.cells[col].textContent;
+            const vb = b.cells[col].textContent;
+            const na = parseFloat(va), nb = parseFloat(vb);
+            if (!isNaN(na) && !isNaN(nb)) return (na - nb) * sortDir;
+            return va.localeCompare(vb) * sortDir;
+        });
+        sortDir *= -1;
+        rows.forEach(r => tbody.appendChild(r));
+    }
+
+    // Init charts
+    alphaChart = new Chart(document.getElementById('alpha-chart'), {
+        type: 'bar',
+        data: { labels: [], datasets: [{ label: 'Predicted Prob Change (%)', data: [], backgroundColor: [] }] },
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+                x: { ticks: { color: '#888' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+                y: { ticks: { color: '#888' } },
+            },
+        },
+    });
+
+    loadDashboard();
+    setInterval(loadDashboard, 60000);
+    </script>
+</body>
+</html>
